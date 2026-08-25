@@ -1,0 +1,196 @@
+{
+  "basics": {
+    "name": "Tatevik Ter-Hovhannisyan",
+    "email": "",
+    "phone": "",
+    "website": "https://github.com/tatevik-t",
+    "summary": "Applied mathematics and informatics researcher focused on LLM robustness, uncertainty calibration, alignment, multilingual NLP, and trustworthy AI.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Yerevan",
+      "countryCode": "AM",
+      "region": "Armenia"
+    },
+    "profiles": [
+      {
+        "network": "Google Scholar",
+        "username": "",
+        "url": "https://scholar.google.com/citations?user=harPFqwAAAAJ"
+      },
+      {
+        "network": "ORCID",
+        "username": "",
+        "url": "https://orcid.org/0009-0004-2254-7514"
+      },
+      {
+        "network": "GitHub",
+        "username": "tatevik-t",
+        "url": "https://github.com/tatevik-t"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "tatevik-t",
+        "url": "https://linkedin.com/in/tatevik-t"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "NVIDIA",
+      "position": "Applied Research Intern",
+      "startDate": "2025-02",
+      "endDate": "2026-07",
+      "summary": "Researching abstention, rejection behavior, and uncertainty-aware alignment in LLMs."
+    },
+    {
+      "company": "TrainForge",
+      "position": "Research Advisor",
+      "startDate": "2025-09",
+      "endDate": "2026-06",
+      "summary": "Supporting a startup focused on agentic safety and incubation programs."
+    },
+    {
+      "company": "1702 Summer School",
+      "position": "Co-organiser and Manager",
+      "startDate": "2021",
+      "endDate": "2025",
+      "summary": "Managed the annual programming summer school and improved program operations."
+    },
+    {
+      "company": "Armenian Bioinformatics Institute",
+      "position": "Bioinformatician Intern",
+      "startDate": "2024-10",
+      "endDate": "2025-11",
+      "summary": "Differentiated resistant and antibiotic-sensitive bacterial strains by analyzing 5′ RNA degradome endpoints."
+    },
+    {
+      "company": "Center of Advanced Software Technologies",
+      "position": "ML Engineer and Researcher",
+      "startDate": "2021-09",
+      "endDate": "2024-05",
+      "summary": "Led adversarial attack research on multilingual transformer models and built prototypes for voice technology."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Russian-Armenian University",
+      "area": "M.Sc. in Applied Mathematics and Informatics",
+      "studyType": "AI and ML",
+      "startDate": "2024-09",
+      "endDate": "2026-07",
+      "gpa": "3.86 / 4",
+      "courses": [
+        "Knowledge Boundary Detection and Hallucination Mitigation via Uncertainty Calibration in Large Language Models",
+        "Latent Alignment vs. Behavioral Alignment in Large Language Models"
+      ]
+    },
+    {
+      "institution": "Russian-Armenian University",
+      "area": "B.Sc. in Applied Mathematics and Informatics",
+      "studyType": "",
+      "startDate": "2020-09",
+      "endDate": "2024-07",
+      "gpa": "3.14 / 4",
+      "courses": [
+        "Noisy text dataset generation for ASR output imitation"
+      ]
+    }
+  ],
+  "skills": [
+    "ML, DL, Multilingual NLP, Voice Technologies",
+    "LLMs, SFT, RL, RAG, Mechanistic Interpretability",
+    "AI Robustness, LLM Security, Fairness & Trustworthy AI",
+    "Python, C++, JavaScript, Bash, Docker, Git, Linux",
+    "PyTorch, TensorFlow, PyTorch-Lightning, Hugging Face, W&B",
+    "FastAPI, REST API, React, scikit-learn, spaCy, pandas, NumPy"
+  ],
+  "languages": [
+    "Russian (native)",
+    "Armenian (native)",
+    "English (proficient)",
+    "French (intermediate)",
+    "Turkish (beginner)"
+  ],
+  "interests": [
+    "Mechanistic interpretability",
+    "LLM security",
+    "Uncertainty estimation",
+    "Hallucination mitigation",
+    "Multilingual NLP",
+    "Trustworthy AI",
+    "Low-resource language technologies"
+  ],
+  "references": [],
+  "publications": [
+    {
+      "name": "Adversarial attacks on language models: WordPiece filtration and ChatGPT synonyms",
+      "publisher": "Journal of Mathematical Sciences",
+      "releaseDate": "2024",
+      "website": "https://doi.org/10.1007/s10958-024-07427-z",
+      "summary": "Co-authored with H. Aleksanyan and K. Avetisyan. Explores adversarial attacks against language models via WordPiece filtration and ChatGPT-based synonym substitution."
+    },
+    {
+      "name": "Transformer-based multilingual language models in cross-lingual plagiarism detection",
+      "publisher": "Proceedings of the Ivannikov Memorial Workshop (IVMEM) 2022",
+      "releaseDate": "2022",
+      "website": "https://doi.org/10.1109/IVMEM57067.2022.9983968",
+      "summary": "Co-authored with K. Avetisyan. Presents a transformer-based approach for multilingual cross-lingual plagiarism detection."
+    }
+  ],
+  "presentations": [
+    {
+      "name": "Adversarial attacks on language models: WordPiece filtration and ChatGPT synonyms",
+      "event": "Artificial Intelligence and Natural Language Conference (AINL) 2023, Workshop on Artificial Intelligence Trustworthiness (WAIT)",
+      "date": "2023-04-21",
+      "location": "Yerevan, Armenia",
+      "description": "Presentation of the adversarial attack framework and its implications for language model robustness."
+    },
+    {
+      "name": "Transformer-based multilingual language models in cross-lingual plagiarism detection",
+      "event": "Ivannikov Memorial Workshop (IVMEM) during Kazan Digital Week",
+      "date": "2022-09-23",
+      "location": "Kazan, Russian Federation",
+      "description": "Presented the multilingual cross-lingual plagiarism detection system based on transformer models."
+    }
+  ],
+  "teaching": [
+    {
+      "course": "Corpus Linguistics Practice Lab",
+      "institution": "National Polytechnic University of Armenia",
+      "date": "2026-09",
+      "role": "Lecturer",
+      "description": "Developed and taught a half-semester AI systems course for second-year bachelor students in Computational Linguistics."
+    },
+    {
+      "course": "Intelligent Systems and AI Agents",
+      "institution": "Russian-Armenian University",
+      "date": "2026-09",
+      "role": "Lecturer",
+      "description": "Taught advanced AI systems and agentic approaches to master's students in the Machine Learning program."
+    },
+    {
+      "course": "Assembly Language Practice Lab",
+      "institution": "Russian-Armenian University",
+      "date": "2026-02",
+      "role": "Lecturer",
+      "description": "Conducted seminars on assembly language and computer architecture for first-year Applied Mathematics and Informatics students."
+    },
+    {
+      "course": "Data Analysis in Linguistics",
+      "institution": "Russian-Armenian University",
+      "date": "2022-09",
+      "role": "Teaching Assistant",
+      "description": "Delivered seminars and lectures for second-year linguistics students."
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI Safety and LLM Evaluation Research",
+      "category": "projects",
+      "date": "2025-2026",
+      "url": "",
+      "description": "Research work focused on abstention, rejection behavior, uncertainty-aware alignment, and robust evaluation of large language models."
+    }
+  ]
+}

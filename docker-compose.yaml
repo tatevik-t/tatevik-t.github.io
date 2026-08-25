@@ -1,0 +1,9 @@
+services:
+  jekyll-site:
+    image: jekyll-site
+    build: .
+    volumes: [ .:/usr/src/app ]
+    ports: [ 4000:4000 ]
+    user: "${LOCAL_UID:-501}:${LOCAL_GID:-20}"
+    environment: [ JEKYLL_ENV=docker, HOME=/tmp ]
+    command: jekyll serve -H 0.0.0.0 -w --config _config.yml,_config_docker.yml

@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% include base_path %}
+
+<h2>Ongoing Research Projects</h2>
+
+{% assign projects = site.portfolio | sort: "order" %}
+{% for post in projects %}
+  <div class="list__item">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      <h2 class="archive__item-title" itemprop="headline">
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+      </h2>
+    </article>
+  </div>
+{% endfor %}
