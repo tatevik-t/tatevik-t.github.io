@@ -1,6 +1,10 @@
 {% include base_path %}
 
 <!-- start custom head snippets -->
+{% if page.rejection_wall %}
+<link rel="stylesheet" href="{{ base_path }}/assets/css/rejections.css">
+<script src="{{ base_path }}/assets/js/rejections.js" defer></script>
+{% endif %}
 
 <!-- Support for Academicons -->
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">

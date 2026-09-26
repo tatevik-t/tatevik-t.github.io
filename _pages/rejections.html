@@ -1,0 +1,93 @@
+---
+layout: default
+title: "Rejection Wall"
+permalink: /rejections/
+description: "A collection of rejections, a record of trying. Job, PhD, and academic program decisions as small achievements."
+author_profile: false
+rejection_wall: true
+---
+{% assign entries = site.data.rejections.entries | sort: "date" | reverse %}
+{% assign organizations = entries | map: "company" | uniq %}
+{% assign badges = entries | group_by: "company" %}
+{% assign jobs = entries | where: "category", "jobs" | map: "company" | uniq %}
+{% assign phds = entries | where: "category", "phd" | map: "company" | uniq %}
+{% assign programs = entries | where: "category", "programs" | map: "company" | uniq %}
+<main id="main" class="rejection-wall">
+  {% include rejection-icons.svg %}
+  <div class="rw-topline"><span>THE OTHER SIDE OF THE CV</span><span class="rw-live"><i></i> STILL PLAYING</span></div>
+  <section class="rw-hero" aria-labelledby="rw-title">
+    <div class="rw-intro">
+      <p class="rw-eyebrow">TATEVIK’S ACHIEVEMENT COLLECTION</p>
+      <h1 id="rw-title">Rejected.<br><em>Still playing.</em></h1>
+      <p class="rw-description">A small museum of “we went with someone else.”<br>Every badge is a time I tried. That part counts, too.</p>
+      <a class="rw-jump" href="#rw-collection">Explore the collection <span aria-hidden="true">↘</span></a>
+    </div>
+    <div class="rw-trophy" aria-hidden="true">
+      <span class="rw-spark rw-spark-one">✦</span><span class="rw-spark rw-spark-two">+</span><span class="rw-spark rw-spark-three">✧</span>
+      <div class="rw-trophy-frame"><svg viewBox="0 0 128 128" class="rw-pixel-trophy" shape-rendering="crispEdges"><path fill="#546a3a" d="M32 12h64v12h16v40H96v12H80v20H48V76H32V64H16V24h16z"/><path fill="#cce97c" d="M32 8h64v48H84v12H72v24H56V68H44V56H32z"/><path fill="#ecf6bb" d="M32 8h64v8H40v32h-8z"/><path fill="#8da850" d="M84 16h12v40H84v12H72V56h12z"/><path fill="#cce97c" d="M16 20h16v8H24v24h16v8H16zm80 0h16v40H88v-8h16V28h-8zM48 88h32v12H48zM36 100h56v12H36z"/><path fill="#ecf6bb" d="M36 100h56v4H36z"/><path fill="#52652e" d="M60 24h8v8h8v8h-8v8h-8v-8h-8v-8h8z"/><path fill="#252d24" d="M24 120h80v4H24z"/></svg></div>
+      <div class="rw-trophy-caption"><span>ACHIEVEMENT UNLOCKED</span><strong>Showing up anyway</strong><small>No offer required.</small></div>
+    </div>
+  </section>
+  <dl class="rw-stats">
+    <div><dt>Attempts collected</dt><dd>{{ entries.size | prepend: '0' | slice: -2, 2 }}<span> / and counting</span></dd></div>
+    <div><dt>Different organizations</dt><dd>{{ organizations.size | prepend: '0' | slice: -2, 2 }}<span> / many possible paths</span></dd></div>
+    <div><dt>The collection so far</dt><dd class="rw-years">{{ entries.last.date | date: "%Y" }}<span> — </span>{{ entries.first.date | date: "%Y" }}</dd></div>
+  </dl>
+  <section id="rw-collection" class="rw-collection" aria-labelledby="rw-collection-title">
+    <div class="rw-section-heading"><div><p class="rw-eyebrow">THE TROPHY CABINET</p><h2 id="rw-collection-title">Proof of trying.</h2></div><p>Select a badge to read its story.</p></div>
+    <div class="rw-controls" hidden>
+      <div class="rw-filters" role="group" aria-label="Filter achievements">
+        <button type="button" data-filter="all" aria-pressed="true">All <span>{{ badges.size }}</span></button>
+        <button type="button" data-filter="jobs" aria-pressed="false">Jobs <span>{{ jobs.size }}</span></button>
+        <button type="button" data-filter="phd" aria-pressed="false">PhDs <span>{{ phds.size }}</span></button>
+        <button type="button" data-filter="programs" aria-pressed="false">Programs <span>{{ programs.size }}</span></button>
+      </div>
+      <div class="rw-tools"><label class="rw-search"><span class="rw-sr-only">Search organization or email excerpt</span><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="rw-search" type="search" placeholder="Find an achievement…" autocomplete="off"></label><label><span class="rw-sr-only">Sort achievements</span><select id="rw-sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="company">Organization A–Z</option></select></label></div>
+    </div>
+    <div class="rw-results"><p id="rw-result-count" role="status" aria-live="polite">Showing all {{ badges.size }} badges</p><span>REAL EMAILS. REAL ATTEMPTS.</span></div>
+    <div class="rw-grid" id="rw-grid">
+      {% for badge in badges %}
+      {% assign entry = badge.items.first %}
+      <article class="rw-card rw-category-{{ entry.category }}" id="{{ entry.id }}" data-category="{{ entry.category }}" data-date="{{ entry.date }}" data-company="{{ entry.company | escape }}">
+        <button class="rw-badge-button" type="button" aria-haspopup="dialog" aria-controls="rw-dialog" aria-label="View {{ entry.company | escape }} badge, collected {{ badge.items.size }} {% if badge.items.size == 1 %}time{% else %}times{% endif %}">
+          <span class="rw-medal" aria-hidden="true">
+            <svg viewBox="0 0 140 150" focusable="false">
+              <path class="rw-medal-shadow" d="M70 7 126 39v65l-56 33-56-33V39Z"/>
+              <path class="rw-medal-edge" d="M70 2 126 34v65l-56 33-56-33V34Z"/>
+              <path class="rw-medal-face" d="M70 10 119 38v57l-49 29-49-29V38Z"/>
+              <path class="rw-medal-shine" d="M70 10 119 38v7L70 18 21 45v-7Z"/>
+              <circle class="rw-medal-ring" cx="70" cy="65" r="36"/>
+              <path class="rw-medal-laurel" d="m41 91-7-12-3-15 4-14m-1 27-6-2m5-8-6-4m10-8-5-5m67 41 7-12 3-15-4-14m1 27 6-2m-5-8 6-4m-10-8 5-5"/>
+              <svg class="rw-medal-glyph" x="47" y="42" width="46" height="46" viewBox="0 0 32 32"><use href="#rw-icon-{{ entry.icon }}"></use></svg>
+              <path class="rw-medal-ribbon-shadow" d="M20 105h100v26l-10-5H30l-10 5Z"/>
+              <path class="rw-medal-ribbon" d="M15 100h110v25l-12-6H27l-12 6Z"/>
+              <text class="rw-medal-number" x="70" y="113" text-anchor="middle">COLLECTED</text>
+              <path class="rw-medal-star" d="m70 23 2 4 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1Z"/>
+            </svg>
+            {% if badge.items.size > 1 %}<span class="rw-repeat-count">×{{ badge.items.size }}</span>{% endif %}
+          </span>
+          <span class="rw-badge-company">{{ entry.company | escape }}</span>
+          <time datetime="{{ entry.date }}">{{ entry.date | date: "%d %b %Y" }}</time>
+          <span class="rw-badge-category">{% case entry.category %}{% when 'jobs' %}Job{% when 'phd' %}PhD{% else %}Program{% endcase %}</span>
+        </button>
+        <div class="rw-detail-content" hidden>
+          <h2>{{ entry.company | escape }}</h2>
+          {% for decision in badge.items %}
+          <section class="rw-decision" aria-label="Decision from {{ decision.date | date: '%d %B %Y' }}">
+            <p class="rw-eyebrow"><time datetime="{{ decision.date }}">{{ decision.date | date: "%d %B %Y" }}</time></p>
+            <div class="rw-quote"><blockquote lang="{{ decision.lang | default: 'en' }}">“{{ decision.quote | escape }}”</blockquote></div>
+            {% if decision.translation %}<p class="rw-translation"><strong>English translation:</strong> {{ decision.translation | escape }}</p>{% endif %}
+            {% if decision.note %}<p class="rw-context">{{ decision.note | escape }}</p>{% endif %}
+          </section>
+          {% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+      <div class="rw-keep-going" aria-hidden="true"><div class="rw-next-icon">+</div><p>Room for the next chapter.</p><span>THE GAME CONTINUES</span></div>
+    </div>
+    <div class="rw-empty" hidden><svg aria-hidden="true" viewBox="0 0 32 32"><use href="#rw-icon-orbit"></use></svg><h3>No achievements here yet.</h3><p>Try another search or category.</p><button type="button" id="rw-reset">Show the whole collection</button></div>
+    <noscript><style>.rejection-wall .rw-detail-content[hidden]{display:block!important}.rw-badge-button{pointer-events:none}</style><p class="rw-noscript">All badges and email excerpts are shown. Enable JavaScript to search, filter, and open badges.</p></noscript>
+  </section>
+  <dialog id="rw-dialog" class="rw-dialog" aria-label="Achievement details"><button type="button" class="rw-dialog-close" aria-label="Close achievement details">×</button><div class="rw-dialog-content"></div></dialog>
+  <aside class="rw-note" aria-label="About this collection"><span aria-hidden="true">✳</span><div><h2>A rejection is an outcome. Trying is an achievement.</h2><p>Short excerpts from my decision emails, checked on {{ site.data.rejections.reviewed_on | date: "%d %B %Y" }}. Dates refer to the decision email. Repeat notices for the same opportunity count once.</p></div><a href="#rw-title" aria-label="Back to top">↑</a></aside>
+</main>
