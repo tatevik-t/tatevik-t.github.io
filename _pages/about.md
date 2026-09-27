@@ -16,6 +16,10 @@ Recent Updates
 <table class="updates-table">
   <tbody>
     <tr>
+      <td>September 2026</td>
+      <td>Our team, including <a href="https://alcray.github.io">Alexan Hayrapetyan</a>, Maxim Safronov, and Sobhan (Ryan) Bahrami, won <strong>2nd place</strong> at the <a href="https://hackathon.firebird.ai/">Firebird Build Hackathon</a> in Yerevan, receiving a <strong>$20,000 prize</strong> and <strong>$8,000 in OpenAI credits</strong>. We built <strong>OPEN JENSEN</strong>, a self-hosted platform that brings robotics dataset exploration, policy fine-tuning, model quantization, and inference testing into one workflow. I worked on the <strong>model quantization</strong> components.</td>
+    </tr>
+    <tr>
       <td>July 2026</td>
       <td>At <a href="https://smiles.skoltech.ru/">SMILES 2026</a> in Suzhou, received the <strong>Best Poster Award (1st place)</strong> and, with Mark Kashirsky and Daniil Sergeev, the <strong>Ascend Special Nomination</strong> for <em>Latent Behavioral Features for Controlling LLM Reasoning</em>.</td>
     </tr>
