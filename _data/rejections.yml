@@ -1,7 +1,14 @@
 # One entry per opportunity. Dates belong to the decision, not a later reply.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
-reviewed_on: "2026-09-26"
+reviewed_on: "2026-09-29"
 entries:
+  - id: hud-2026
+    company: HUD
+    date: "2026-09-29"
+    category: jobs
+    icon: signal
+    quote: "After reviewing your application we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
+
   - id: apollo-2026
     company: Apollo Research
     date: "2026-09-18"
