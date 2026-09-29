@@ -6,14 +6,14 @@ entries:
     company: HUD
     date: "2026-09-29"
     category: jobs
-    icon: signal
+    icon: compass
     quote: "After reviewing your application we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
 
   - id: apollo-2026
     company: Apollo Research
     date: "2026-09-18"
     category: jobs
-    icon: orbit
+    icon: rocket
     quote: "we've made the decision not to move forward with your application"
     note: Encouraged to reapply in 6–12 months or consider other open roles.
 
@@ -22,14 +22,14 @@ entries:
     company: WorldQuant
     date: "2026-09-16"
     category: jobs
-    icon: diamond
+    icon: chart
     quote: "the team has decided to pursue other candidates who appear to match our needs and requirements more closely at this time."
 
   - id: itu-2026
     company: IT University of Copenhagen
     date: "2026-09-14"
     category: phd
-    icon: tower
+    icon: bridge
     quote: "We interviewed an exceptionally qualified set of candidates, and I only wish we’d had funding to hire more than one of you!"
     note: The hiring team confirmed that it had offered the position to another applicant.
 
@@ -38,28 +38,28 @@ entries:
     company: Meridial
     date: "2026-09-04"
     category: jobs
-    icon: globe
+    icon: link
     quote: "We truly appreciate your effort and enthusiasm."
 
   - id: bostongene-2026
     company: BostonGene
     date: "2026-08-25"
     category: jobs
-    icon: hourglass
+    icon: dna
     quote: "At this time, we will not be moving forward with your application."
 
   - id: deep-origin-2026
     company: Deep Origin
     date: "2026-07-13"
     category: jobs
-    icon: crystal
+    icon: mountain
     quote: "After careful evaluation, we have decided to pursue other candidates whose skills and experience more closely align with the needs of the role."
 
   - id: ku-2026
     company: University of Copenhagen
     date: "2026-07-10"
     category: phd
-    icon: book
+    icon: lamp
     quote: "We must inform you that we have decided to offer the position to another applicant"
     note: The earlier non-shortlisting notice arrived on 8 June; this was the final decision.
 
@@ -68,7 +68,7 @@ entries:
     company: Principles of Intelligence
     date: "2026-06-29"
     category: jobs
-    icon: flag
+    icon: brain
     quote: "We received an exceptionally strong pool of applicants for this role (112 people)"
     note: The team chose candidates whose experience more closely matched its current needs.
 
@@ -77,7 +77,7 @@ entries:
     company: METR
     date: "2026-06-23"
     category: jobs
-    icon: signal
+    icon: ruler
     quote: "Hiring is a noisy process, and we wouldn't encourage you to read too much into any single outcome."
     note: A follow-up offered an engineering assessment or the option to reapply when research roles reopened.
 
