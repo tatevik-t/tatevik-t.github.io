@@ -1,7 +1,23 @@
 # One entry per opportunity. Dates belong to the decision, not a later reply.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
-reviewed_on: "2026-09-29"
+reviewed_on: "2026-09-30"
 entries:
+  - id: resolution-2026
+    company: Resolution
+    date: "2026-09-30"
+    category: jobs
+    icon: crystal
+    quote: "After careful consideration we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
+    note: "We appreciate your interest in Resolution."
+
+  - id: anthropic-takeoff-intel-2026
+    company: Anthropic
+    date: "2026-09-30"
+    category: jobs
+    icon: flag
+    quote: "After consideration, we have decided not to move forward with your application for the Research Engineer, Takeoff Intel role."
+    note: "If you applied to other roles at Anthropic, you may still hear back from us if we see strong alignment with our needs."
+
   - id: hud-2026
     company: HUD
     date: "2026-09-29"
@@ -68,7 +84,7 @@ entries:
     company: Principles of Intelligence
     date: "2026-06-29"
     category: jobs
-    icon: brain
+    icon: flag
     quote: "We received an exceptionally strong pool of applicants for this role (112 people)"
     note: The team chose candidates whose experience more closely matched its current needs.
 
