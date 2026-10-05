@@ -1,12 +1,33 @@
 # One entry per opportunity. Dates belong to the decision, not a later reply.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
-reviewed_on: "2026-09-30"
+reviewed_on: "2026-10-05"
 entries:
+  - id: afterquery-frontier-evaluations-2026
+    company: AfterQuery
+    date: "2026-10-04"
+    category: jobs
+    icon: search
+    quote: "After reviewing your application we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
+
+  - id: huggingface-open-source-ml-emea-2026
+    company: Hugging Face
+    date: "2026-10-05"
+    category: jobs
+    icon: heart
+    quote: "We took a look at your application and concluded that it wasn't a good fit for this role at this time."
+
+  - id: huggingface-voice-agents-emea-2026
+    company: Hugging Face
+    date: "2026-10-05"
+    category: jobs
+    icon: heart
+    quote: "We took a look at your application and concluded that it wasn't a good fit for this role at this time."
+
   - id: resolution-2026
     company: Resolution
     date: "2026-09-30"
     category: jobs
-    icon: crystal
+    icon: target
     quote: "After careful consideration we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
     note: "We appreciate your interest in Resolution."
 
@@ -14,7 +35,7 @@ entries:
     company: Anthropic
     date: "2026-09-30"
     category: jobs
-    icon: flag
+    icon: prism
     quote: "After consideration, we have decided not to move forward with your application for the Research Engineer, Takeoff Intel role."
     note: "If you applied to other roles at Anthropic, you may still hear back from us if we see strong alignment with our needs."
 
@@ -22,7 +43,7 @@ entries:
     company: HUD
     date: "2026-09-29"
     category: jobs
-    icon: compass
+    icon: grid
     quote: "After reviewing your application we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
 
   - id: apollo-2026
@@ -38,14 +59,14 @@ entries:
     company: WorldQuant
     date: "2026-09-16"
     category: jobs
-    icon: chart
+    icon: globe
     quote: "the team has decided to pursue other candidates who appear to match our needs and requirements more closely at this time."
 
   - id: itu-2026
     company: IT University of Copenhagen
     date: "2026-09-14"
     category: phd
-    icon: bridge
+    icon: book
     quote: "We interviewed an exceptionally qualified set of candidates, and I only wish we’d had funding to hire more than one of you!"
     note: The hiring team confirmed that it had offered the position to another applicant.
 
@@ -54,7 +75,7 @@ entries:
     company: Meridial
     date: "2026-09-04"
     category: jobs
-    icon: link
+    icon: compass
     quote: "We truly appreciate your effort and enthusiasm."
 
   - id: bostongene-2026
@@ -68,14 +89,14 @@ entries:
     company: Deep Origin
     date: "2026-07-13"
     category: jobs
-    icon: mountain
+    icon: crystal
     quote: "After careful evaluation, we have decided to pursue other candidates whose skills and experience more closely align with the needs of the role."
 
   - id: ku-2026
     company: University of Copenhagen
     date: "2026-07-10"
     category: phd
-    icon: lamp
+    icon: tower
     quote: "We must inform you that we have decided to offer the position to another applicant"
     note: The earlier non-shortlisting notice arrived on 8 June; this was the final decision.
 
@@ -84,7 +105,7 @@ entries:
     company: Principles of Intelligence
     date: "2026-06-29"
     category: jobs
-    icon: flag
+    icon: brain
     quote: "We received an exceptionally strong pool of applicants for this role (112 people)"
     note: The team chose candidates whose experience more closely matched its current needs.
 
@@ -102,7 +123,7 @@ entries:
     company: MBZUAI
     date: "2025-11-11"
     category: programs
-    icon: snowflake
+    icon: network
     quote: "we are unable to offer you a place in this year's winter school."
     note: More than 2,400 applications were received for 60 places.
 
@@ -111,7 +132,7 @@ entries:
     company: Armenian Educational Foundation
     date: "2025-08-12"
     category: programs
-    icon: star
+    icon: mountain
     lang: hy
     quote: "Ցավով տեղեկացնում ենք, որ Դուք այս տարի չեք ընդգրկվել կրթաթոշակառուների ցանկում։"
     translation: "We regret to inform you that you have not been included in this year's list of scholarship recipients."
@@ -122,7 +143,7 @@ entries:
     company: BostonGene
     date: "2025-07-14"
     category: jobs
-    icon: flask
+    icon: dna
     lang: ru
     quote: "К сожалению, в этом году мы не можем предложить вам участие в летней стажировке в BostonGene."
     translation: "Unfortunately, this year we cannot offer you a place in the summer internship at BostonGene."
@@ -142,7 +163,7 @@ entries:
     company: Hackathon by High-Tech Ministry
     date: "2024-12-10"
     category: programs
-    icon: flag
+    icon: circuit
     lang: ru
     quote: "К сожалению, в этот раз ваша заявка не прошла отбор"
     translation: "Unfortunately, your application did not pass selection this time."
@@ -153,7 +174,7 @@ entries:
     company: EPFL
     date: "2024-12-04"
     category: programs
-    icon: scroll
+    icon: flask
     quote: "your application will not be considered any further in the selection process because it is incomplete in some essential fields or documents."
 
   - id: rising-leaders-2024
