@@ -1,7 +1,15 @@
 # One entry per opportunity. Dates belong to the decision, not a later reply.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
-reviewed_on: "2026-10-05"
+reviewed_on: "2026-10-07"
 entries:
+  - id: dfki-mechanistic-interpretability-safety-11387-2026
+    company: German Research Centre for Artificial Intelligence (DFKI)
+    date: "2026-10-06"
+    category: phd
+    icon: brain
+    quote: "we have decided to select another candidate whose profile is an even better match for the requirements of the vacant position."
+    note: "We would like to thank you sincerely for the time and effort you have put into your application, as well as for your interest in joining our research centre."
+
   - id: afterquery-frontier-evaluations-2026
     company: AfterQuery
     date: "2026-10-04"
