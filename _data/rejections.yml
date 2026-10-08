@@ -1,7 +1,16 @@
 # One entry per opportunity. Dates belong to the decision, not a later reply.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
-reviewed_on: "2026-10-07"
+reviewed_on: "2026-10-08"
 entries:
+  - id: avito-ds-engineer-2026
+    company: Avito
+    date: "2026-10-08"
+    category: jobs
+    icon: grid
+    lang: ru
+    quote: "К сожалению, на текущий момент у нас нет вакансий, которые мы могли бы вам предложить."
+    translation: "Unfortunately, at the moment we have no vacancies we could offer you."
+
   - id: dfki-mechanistic-interpretability-safety-11387-2026
     company: German Research Centre for Artificial Intelligence (DFKI)
     date: "2026-10-06"
