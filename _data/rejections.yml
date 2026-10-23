@@ -1,7 +1,15 @@
 # One entry per opportunity. Dates belong to the decision, not a later reply.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
-reviewed_on: "2026-10-22"
+reviewed_on: "2026-10-23"
 entries:
+  - id: yandex-ml-developer-llm-special-projects-alice-2026
+    company: Yandex
+    date: "2026-10-23"
+    category: jobs
+    icon: satellite
+    quote: "we are not able to move forward with your application at this time."
+    note: ML developer role for Alice's LLM special projects team.
+
   - id: avito-data-scientist-automatic-moderation-2026
     company: Avito
     date: "2026-10-22"
