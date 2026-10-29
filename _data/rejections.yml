@@ -1,8 +1,29 @@
 # One entry per opportunity. Dates belong to the decision, not a later reply.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
 # Omit position titles from notes; treat them as personal information in future entries.
-reviewed_on: "2026-10-23"
+reviewed_on: "2026-10-29"
 entries:
+  - id: yandex-2026-10-26-1
+    company: Yandex
+    date: "2026-10-26"
+    category: jobs
+    icon: satellite
+    quote: "we are not able to move forward with your application at this time."
+
+  - id: yandex-2026-10-26-2
+    company: Yandex
+    date: "2026-10-26"
+    category: jobs
+    icon: satellite
+    quote: "we are not able to move forward with your application at this time."
+
+  - id: preply-2026-10-28
+    company: Preply
+    date: "2026-10-28"
+    category: jobs
+    icon: wave
+    quote: "we've decided to move forward with other candidates who are a closer match for the role at this time."
+
   - id: yandex-researcher-machine-learning-2026
     company: Yandex
     date: "2026-10-23"
