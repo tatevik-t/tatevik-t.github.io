@@ -1,8 +1,59 @@
-# One entry per opportunity. Dates belong to the decision, not a later reply.
+# One entry per opportunity. Use the decision date, or a clearly labeled observation date when unavailable.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
 # Omit position titles from notes; treat them as personal information in future entries.
-reviewed_on: "2026-10-29"
+reviewed_on: "2026-11-08"
 entries:
+  - id: google-deepmind-2026-11-08
+    company: Google DeepMind
+    date: "2026-11-08"
+    category: jobs
+    icon: brain
+    quote: "Not proceeding"
+    note: "Observed in Google Careers on 8 November; the actual decision date is unknown. Treated as closed/rejected."
+
+  - id: salmon-group-2026-11-03
+    company: Salmon Group
+    date: "2026-11-03"
+    category: jobs
+    icon: wave
+    quote: "We’ve reviewed your application and decided not to move forward at this stage."
+    note: "This decision reflects the specific needs of this role, not your overall capability."
+
+  - id: discovery-loop-2026-11-02
+    company: Discovery Loop
+    date: "2026-11-02"
+    category: jobs
+    icon: orbit
+    quote: "After reviewing your application, we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
+
+  - id: firecrawl-2026-10-30
+    company: Firecrawl
+    date: "2026-10-30"
+    category: jobs
+    icon: spark
+    quote: "We've reviewed yours carefully and decided not to move forward right now."
+
+  - id: apollo-2026-10-30-1
+    company: Apollo Research
+    date: "2026-10-30"
+    category: jobs
+    icon: rocket
+    quote: "we've made the decision not to move forward with your application"
+
+  - id: apollo-2026-10-30-2
+    company: Apollo Research
+    date: "2026-10-30"
+    category: jobs
+    icon: rocket
+    quote: "we've made the decision not to move forward with your application"
+
+  - id: apollo-2026-10-30-3
+    company: Apollo Research
+    date: "2026-10-30"
+    category: jobs
+    icon: rocket
+    quote: "we've made the decision not to move forward with your application"
+
   - id: yandex-2026-10-26-1
     company: Yandex
     date: "2026-10-26"
@@ -24,34 +75,11 @@ entries:
     icon: wave
     quote: "we've decided to move forward with other candidates who are a closer match for the role at this time."
 
-  - id: yandex-researcher-machine-learning-2026
-    company: Yandex
-    date: "2026-10-23"
-    category: jobs
-    icon: satellite
-    quote: "we are not ready to invite you to an interview at this time."
-
-  - id: yandex-ml-developer-llm-special-projects-alice-2026
-    company: Yandex
-    date: "2026-10-23"
-    category: jobs
-    icon: satellite
-    quote: "we are not able to move forward with your application at this time."
-
-  - id: avito-data-scientist-automatic-moderation-2026
-    company: Avito
-    date: "2026-10-22"
-    category: jobs
-    icon: grid
-    lang: ru
-    quote: "к сожалению, на текущий момент у нас нет вакансий, которые мы могли бы вам предложить."
-    translation: "Unfortunately, at the moment we have no vacancies we could offer you."
-
   - id: align-technology-sr-machine-learning-engineer-2026
     company: Align Technology
     date: "2026-10-20"
     category: jobs
-    icon: gear
+    icon: network
     quote: "we have decided to move forward with other candidates whose experiences are better suited to this particular role."
 
   - id: avito-ds-engineer-2026
@@ -112,7 +140,7 @@ entries:
     company: HUD
     date: "2026-09-29"
     category: jobs
-    icon: shield
+    icon: grid
     quote: "After reviewing your application we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
 
   - id: apollo-2026
@@ -174,7 +202,7 @@ entries:
     company: Principles of Intelligence
     date: "2026-06-29"
     category: jobs
-    icon: atom
+    icon: brain
     quote: "We received an exceptionally strong pool of applicants for this role (112 people)"
     note: The team chose candidates whose experience more closely matched its current needs.
 
