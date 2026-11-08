@@ -54,6 +54,15 @@ entries:
     icon: rocket
     quote: "we've made the decision not to move forward with your application"
 
+  - id: t-bank-2026-10-29
+    company: T-Bank
+    date: "2026-10-29"
+    category: jobs
+    icon: shield
+    lang: ru
+    quote: "но на данный момент пока что не сможем пригласить вас на эту позицию."
+    translation: "At the moment, we are unable to invite you to this position."
+
   - id: yandex-2026-10-26-1
     company: Yandex
     date: "2026-10-26"
