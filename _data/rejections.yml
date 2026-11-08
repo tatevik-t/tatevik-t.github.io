@@ -1,13 +1,16 @@
 # One entry per opportunity. Use the decision date, or a clearly labeled observation date when unavailable.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
 # Omit position titles from notes; treat them as personal information in future entries.
+# Each organization uses its own icon; reuse it for repeat attempts and choose an unused icon for new organizations.
+# stages counts completed selection rounds after application; omit until confirmed.
 reviewed_on: "2026-11-08"
 entries:
   - id: google-deepmind-2026-11-08
     company: Google DeepMind
     date: "2026-11-08"
     category: jobs
-    icon: brain
+    stages: 0
+    icon: chess
     quote: "Not proceeding"
     note: "Observed in Google Careers on 8 November; the actual decision date is unknown. Treated as closed/rejected."
 
@@ -15,7 +18,8 @@ entries:
     company: Salmon Group
     date: "2026-11-03"
     category: jobs
-    icon: wave
+    stages: 0
+    icon: chart
     quote: "We’ve reviewed your application and decided not to move forward at this stage."
     note: "This decision reflects the specific needs of this role, not your overall capability."
 
@@ -23,6 +27,7 @@ entries:
     company: Discovery Loop
     date: "2026-11-02"
     category: jobs
+    stages: 0
     icon: orbit
     quote: "After reviewing your application, we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
 
@@ -30,6 +35,7 @@ entries:
     company: Firecrawl
     date: "2026-10-30"
     category: jobs
+    stages: 0
     icon: spark
     quote: "We've reviewed yours carefully and decided not to move forward right now."
 
@@ -37,6 +43,7 @@ entries:
     company: Apollo Research
     date: "2026-10-30"
     category: jobs
+    stages: 0
     icon: rocket
     quote: "we've made the decision not to move forward with your application"
 
@@ -44,6 +51,7 @@ entries:
     company: Apollo Research
     date: "2026-10-30"
     category: jobs
+    stages: 0
     icon: rocket
     quote: "we've made the decision not to move forward with your application"
 
@@ -51,6 +59,7 @@ entries:
     company: Apollo Research
     date: "2026-10-30"
     category: jobs
+    stages: 0
     icon: rocket
     quote: "we've made the decision not to move forward with your application"
 
@@ -58,6 +67,7 @@ entries:
     company: T-Bank
     date: "2026-10-29"
     category: jobs
+    stages: 0
     icon: shield
     lang: ru
     quote: "но на данный момент пока что не сможем пригласить вас на эту позицию."
@@ -67,6 +77,7 @@ entries:
     company: Yandex
     date: "2026-10-26"
     category: jobs
+    stages: 0
     icon: satellite
     quote: "we are not able to move forward with your application at this time."
 
@@ -74,6 +85,7 @@ entries:
     company: Yandex
     date: "2026-10-26"
     category: jobs
+    stages: 0
     icon: satellite
     quote: "we are not able to move forward with your application at this time."
 
@@ -81,6 +93,7 @@ entries:
     company: Preply
     date: "2026-10-28"
     category: jobs
+    stages: 0
     icon: wave
     quote: "we've decided to move forward with other candidates who are a closer match for the role at this time."
 
@@ -88,13 +101,15 @@ entries:
     company: Align Technology
     date: "2026-10-20"
     category: jobs
-    icon: network
+    stages: 0
+    icon: gear
     quote: "we have decided to move forward with other candidates whose experiences are better suited to this particular role."
 
   - id: avito-ds-engineer-2026
     company: Avito
     date: "2026-10-08"
     category: jobs
+    stages: 0
     icon: grid
     lang: ru
     quote: "К сожалению, на текущий момент у нас нет вакансий, которые мы могли бы вам предложить."
@@ -104,6 +119,7 @@ entries:
     company: German Research Centre for Artificial Intelligence (DFKI)
     date: "2026-10-06"
     category: phd
+    stages: 0
     icon: brain
     quote: "we have decided to select another candidate whose profile is an even better match for the requirements of the vacant position."
     note: "We would like to thank you sincerely for the time and effort you have put into your application, as well as for your interest in joining our research centre."
@@ -112,6 +128,7 @@ entries:
     company: AfterQuery
     date: "2026-10-04"
     category: jobs
+    stages: 0
     icon: search
     quote: "After reviewing your application we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
 
@@ -119,6 +136,7 @@ entries:
     company: Hugging Face
     date: "2026-10-05"
     category: jobs
+    stages: 0
     icon: heart
     quote: "We took a look at your application and concluded that it wasn't a good fit for this role at this time."
 
@@ -126,6 +144,7 @@ entries:
     company: Hugging Face
     date: "2026-10-05"
     category: jobs
+    stages: 0
     icon: heart
     quote: "We took a look at your application and concluded that it wasn't a good fit for this role at this time."
 
@@ -133,6 +152,7 @@ entries:
     company: Resolution
     date: "2026-09-30"
     category: jobs
+    stages: 0
     icon: target
     quote: "After careful consideration we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
     note: "We appreciate your interest in Resolution."
@@ -141,6 +161,7 @@ entries:
     company: Anthropic
     date: "2026-09-30"
     category: jobs
+    stages: 0
     icon: prism
     quote: "After consideration, we have decided not to move forward with your application for the Research Engineer, Takeoff Intel role."
     note: "If you applied to other roles at Anthropic, you may still hear back from us if we see strong alignment with our needs."
@@ -149,13 +170,15 @@ entries:
     company: HUD
     date: "2026-09-29"
     category: jobs
-    icon: grid
+    stages: 0
+    icon: aperture
     quote: "After reviewing your application we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
 
   - id: apollo-2026
     company: Apollo Research
     date: "2026-09-18"
     category: jobs
+    stages: 0
     icon: rocket
     quote: "we've made the decision not to move forward with your application"
     note: Encouraged to reapply in 6–12 months or consider other open roles.
@@ -165,6 +188,7 @@ entries:
     company: WorldQuant
     date: "2026-09-16"
     category: jobs
+    stages: 0
     icon: globe
     quote: "the team has decided to pursue other candidates who appear to match our needs and requirements more closely at this time."
 
@@ -172,15 +196,17 @@ entries:
     company: IT University of Copenhagen
     date: "2026-09-14"
     category: phd
+    stages: 3
     icon: book
     quote: "We interviewed an exceptionally qualified set of candidates, and I only wish we’d had funding to hire more than one of you!"
-    note: The hiring team confirmed that it had offered the position to another applicant.
+    note: "The hiring team confirmed that it had offered the position to another applicant. Stages: one offline screening and two interviews."
 
 
   - id: meridial-2026
     company: Meridial
     date: "2026-09-04"
     category: jobs
+    stages: 0
     icon: compass
     quote: "We truly appreciate your effort and enthusiasm."
 
@@ -188,20 +214,25 @@ entries:
     company: BostonGene
     date: "2026-08-25"
     category: jobs
+    stages: 1
     icon: dna
     quote: "At this time, we will not be moving forward with your application."
+    note: "Stages: one screening interview."
 
   - id: deep-origin-2026
     company: Deep Origin
     date: "2026-07-13"
     category: jobs
+    stages: 2
     icon: crystal
     quote: "After careful evaluation, we have decided to pursue other candidates whose skills and experience more closely align with the needs of the role."
+    note: "Stages: screening and a technical interview."
 
   - id: ku-2026
     company: University of Copenhagen
     date: "2026-07-10"
     category: phd
+    stages: 0
     icon: tower
     quote: "We must inform you that we have decided to offer the position to another applicant"
     note: The earlier non-shortlisting notice arrived on 8 June; this was the final decision.
@@ -211,7 +242,8 @@ entries:
     company: Principles of Intelligence
     date: "2026-06-29"
     category: jobs
-    icon: brain
+    stages: 0
+    icon: atom
     quote: "We received an exceptionally strong pool of applicants for this role (112 people)"
     note: The team chose candidates whose experience more closely matched its current needs.
 
@@ -220,6 +252,7 @@ entries:
     company: METR
     date: "2026-06-23"
     category: jobs
+    stages: 0
     icon: ruler
     quote: "Hiring is a noisy process, and we wouldn't encourage you to read too much into any single outcome."
     note: A follow-up offered an engineering assessment or the option to reapply when research roles reopened.
@@ -229,6 +262,7 @@ entries:
     company: MBZUAI
     date: "2025-11-11"
     category: programs
+    stages: 0
     icon: network
     quote: "we are unable to offer you a place in this year's winter school."
     note: More than 2,400 applications were received for 60 places.
@@ -238,48 +272,53 @@ entries:
     company: Armenian Educational Foundation
     date: "2025-08-12"
     category: programs
+    stages: 2
     icon: mountain
     lang: hy
     quote: "Ցավով տեղեկացնում ենք, որ Դուք այս տարի չեք ընդգրկվել կրթաթոշակառուների ցանկում։"
     translation: "We regret to inform you that you have not been included in this year's list of scholarship recipients."
-    note: The decision followed document review and an interview. The email cited limited funding and places.
+    note: "The decision followed document review and an interview. The email cited limited funding and places. Stages: screening and an interview."
 
 
   - id: bostongene-2025
     company: BostonGene
     date: "2025-07-14"
     category: jobs
+    stages: 2
     icon: dna
     lang: ru
     quote: "К сожалению, в этом году мы не можем предложить вам участие в летней стажировке в BostonGene."
     translation: "Unfortunately, this year we cannot offer you a place in the summer internship at BostonGene."
-    note: Sent after participation in the educational program; only a limited number of internship offers were available.
+    note: "Sent after participation in the educational program; only a limited number of internship offers were available. Stages: screening and a technical round."
 
 
   - id: deep-origin-2024
     company: Deep Origin
     date: "2024-12-20"
     category: jobs
+    stages: 3
     icon: crystal
     quote: "The feedback from your interview was quite positive overall"
-    note: The team chose another candidate and offered to keep in touch for future opportunities.
+    note: "The team chose another candidate and offered to keep in touch for future opportunities. Stages: an online assessment, screening, and an interview."
 
 
   - id: rau-hackathon-2024
     company: Hackathon by High-Tech Ministry
     date: "2024-12-10"
     category: programs
+    stages: 1
     icon: circuit
     lang: ru
     quote: "К сожалению, в этот раз ваша заявка не прошла отбор"
     translation: "Unfortunately, your application did not pass selection this time."
-    note: Selection was attributed to Armenia’s Ministry of High-Tech Industry, with an invitation to participate in a later hackathon.
+    note: "Selection was attributed to Armenia’s Ministry of High-Tech Industry, with an invitation to participate in a later hackathon. Stages: one screening."
 
 
   - id: epfl-2024
     company: EPFL
     date: "2024-12-04"
     category: programs
+    stages: 0
     icon: flask
     quote: "your application will not be considered any further in the selection process because it is incomplete in some essential fields or documents."
 
@@ -287,8 +326,9 @@ entries:
     company: Rising Leaders Armenia
     date: "2024-08-27"
     category: programs
+    stages: 2
     icon: steps
     lang: hy
     quote: "Որոշումը, այնուամենայնիվ, Ձեր հմտությունների կամ ձեռքբերումների բացասական գնահատականը չէ:"
     translation: "The decision, however, is not a negative assessment of your skills or achievements."
-    note: The scholarship went to other candidates after review of more than 160 applications.
+    note: "The scholarship went to other candidates after review of more than 160 applications. Two stages within one round."

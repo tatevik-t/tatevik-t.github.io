@@ -48,8 +48,12 @@ rejection_wall: true
     <div class="rw-grid" id="rw-grid">
       {% for badge in badges %}
       {% assign entry = badge.items.first %}
+      {% assign max_stages = -1 %}
+      {% for decision in badge.items %}
+        {% if decision.stages != nil and decision.stages > max_stages %}{% assign max_stages = decision.stages %}{% endif %}
+      {% endfor %}
       <article class="rw-card rw-category-{{ entry.category }}" id="{{ entry.id }}" data-category="{{ entry.category }}" data-date="{{ entry.date }}" data-company="{{ entry.company | escape }}">
-        <button class="rw-badge-button" type="button" aria-haspopup="dialog" aria-controls="rw-dialog" aria-label="View {{ entry.company | escape }} badge, collected {{ badge.items.size }} {% if badge.items.size == 1 %}time{% else %}times{% endif %}">
+        <button class="rw-badge-button" type="button" aria-haspopup="dialog" aria-controls="rw-dialog" aria-label="View {{ entry.company | escape }} badge, collected {{ badge.items.size }} {% if badge.items.size == 1 %}time{% else %}times{% endif %}{% if max_stages > 0 %}, highest recorded count: {{ max_stages }} {% if max_stages == 1 %}stage{% else %}stages{% endif %} after application{% endif %}">
           <span class="rw-medal" aria-hidden="true">
             <svg viewBox="0 0 140 150" focusable="false">
               <path class="rw-medal-shadow" d="M70 7 126 39v65l-56 33-56-33V39Z"/>
@@ -64,6 +68,7 @@ rejection_wall: true
               <text class="rw-medal-number" x="70" y="113" text-anchor="middle">COLLECTED</text>
               <path class="rw-medal-star" d="m70 23 2 4 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1Z"/>
             </svg>
+            {% if max_stages > 0 %}<span class="rw-stage-badge" title="Highest recorded count: {{ max_stages }} {% if max_stages == 1 %}stage{% else %}stages{% endif %} after application">»{{ max_stages }}</span>{% endif %}
             {% if badge.items.size > 1 %}<span class="rw-repeat-count">×{{ badge.items.size }}</span>{% endif %}
           </span>
           <span class="rw-badge-company">{{ entry.company | escape }}</span>
@@ -75,6 +80,7 @@ rejection_wall: true
           {% for decision in badge.items %}
           <section class="rw-decision" aria-label="Decision from {{ decision.date | date: '%d %B %Y' }}">
             <p class="rw-eyebrow"><time datetime="{{ decision.date }}">{{ decision.date | date: "%d %B %Y" }}</time></p>
+            {% if decision.stages != nil and decision.stages > 0 %}<p class="rw-stage-count"><span aria-hidden="true">»</span>{{ decision.stages }} {% if decision.stages == 1 %}stage{% else %}stages{% endif %} after application</p>{% endif %}
             <div class="rw-quote"><blockquote lang="{{ decision.lang | default: 'en' }}">“{{ decision.quote | escape }}”</blockquote></div>
             {% if decision.translation %}<p class="rw-translation"><strong>English translation:</strong> {{ decision.translation | escape }}</p>{% endif %}
             {% if decision.note %}<p class="rw-context">{{ decision.note | escape }}</p>{% endif %}
@@ -89,5 +95,5 @@ rejection_wall: true
     <noscript><style>.rejection-wall .rw-detail-content[hidden]{display:block!important}.rw-badge-button{pointer-events:none}</style><p class="rw-noscript">All badges and email excerpts are shown. Enable JavaScript to search, filter, and open badges.</p></noscript>
   </section>
   <dialog id="rw-dialog" class="rw-dialog" aria-label="Achievement details"><button type="button" class="rw-dialog-close" aria-label="Close achievement details">×</button><div class="rw-dialog-content"></div></dialog>
-  <aside class="rw-note" aria-label="About this collection"><span aria-hidden="true">✳</span><div><h2>A rejection is an outcome. Trying is an achievement.</h2><p>Short excerpts from my decision emails and application portals, checked on {{ site.data.rejections.reviewed_on | date: "%d %B %Y" }}. Dates refer to the decision notice; when the decision date is unknown, the observation date is labeled in the entry. Repeat notices for the same opportunity count once.</p></div><a href="#rw-title" aria-label="Back to top">↑</a></aside>
+  <aside class="rw-note" aria-label="About this collection"><span aria-hidden="true">✳</span><div><h2>A rejection is an outcome. Trying is an achievement.</h2><p>Short excerpts from my decision emails and application portals, checked on {{ site.data.rejections.reviewed_on | date: "%d %B %Y" }}. Dates refer to the decision notice; when the decision date is unknown, the observation date is labeled in the entry. Repeat notices for the same opportunity count once.</p><p>The » count records stages completed after applying. Counts appear only for attempts that progressed beyond the application stage; each badge shows the highest count for that organization.</p></div><a href="#rw-title" aria-label="Back to top">↑</a></aside>
 </main>

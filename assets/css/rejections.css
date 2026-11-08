@@ -64,8 +64,12 @@ html[data-theme="dark"] #main.rejection-wall{--rw-bg:var(--global-bg-color,#141b
 .rw-badge-company { display: block; font-size: 13px; font-weight: 650; line-height: 1.4; max-width: 180px; min-height: 37px; margin: 0 0 9px; }
 .rw-badge-button time { color: var(--rw-muted); font: 10px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; }
 .rw-badge-category { display: block; color: var(--rw-muted); font-size: 9px; margin-top: 4px; }
-.rw-repeat-count { position: absolute; right: -1px; bottom: 12px; display: grid; place-items: center; min-width: 35px; height: 27px; padding: 0 7px; border: 3px solid var(--rw-bg); border-radius: 20px; background: var(--rw-enamel); color: var(--rw-accent); font: 700 12px/1 ui-monospace, SFMono-Regular, Consolas, monospace; box-shadow: 0 2px 5px #0002; }
-.rw-dialog .rw-repeat-count { border-color: var(--rw-surface); }
+.rw-repeat-count, .rw-stage-badge { position: absolute; right: -1px; display: grid; place-items: center; min-width: 35px; height: 27px; padding: 0 7px; border: 3px solid var(--rw-bg); border-radius: 20px; background: var(--rw-enamel); color: var(--rw-accent); font: 700 12px/1 ui-monospace, SFMono-Regular, Consolas, monospace; box-shadow: 0 2px 5px #0002; }
+.rw-repeat-count { bottom: 12px; }
+.rw-stage-badge { top: 12px; }
+.rw-dialog .rw-repeat-count, .rw-dialog .rw-stage-badge { border-color: var(--rw-surface); }
+.rejection-wall .rw-stage-count { margin-top: 7px; color: var(--rw-muted); font: 11px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.rw-stage-count > span { color: var(--rw-green); font-size: 15px; font-weight: 700; }
 .rw-keep-going { display: flex; min-height: 247px; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 14px; padding: 20px 10px; color: var(--rw-muted); }
 .rw-next-icon { display: grid; place-items: center; width: 88px; height: 88px; border: 1px dashed #55634d; border-radius: 50%; font: 32px/1 ui-monospace, SFMono-Regular, Consolas, monospace; color: #80976b; }
 .rw-keep-going p { font-size: 12px; }
@@ -85,6 +89,7 @@ html[data-theme="dark"] #main.rejection-wall{--rw-bg:var(--global-bg-color,#141b
 .rw-note div { max-width: 850px; }
 .rejection-wall .rw-note h2 { font-size: 15px; line-height: 1.5; font-weight: 600; margin: 0 0 9px; }
 .rw-note p { font-size: 11px; color: var(--rw-muted); line-height: 1.8; }
+.rw-note p + p { margin-top: 8px; }
 .rw-note > a { display: grid; place-items: center; margin-left: auto; align-self: flex-start; min-width: 36px; min-height: 36px; border: 1px solid var(--rw-line); border-radius: 50%; }
 .rw-empty { text-align: center; padding: 70px 20px; border: 1px dashed var(--rw-line); border-radius: 4px; }
 .rw-empty > svg { width: 42px; height: 42px; fill: none; stroke: var(--rw-green); stroke-width: 1.5; margin-bottom: 15px; }
