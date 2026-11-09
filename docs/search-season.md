@@ -42,3 +42,5 @@ User clarification on 2026-11-09: reroute one existing interviewed Job through O
 Latest correction, 2026-11-09: one Other acceptance did not pass through interview. Preserve the two confirmed Other assessment routes, but branch one from Online assessment other directly to Accepted; only the remaining one passes through Interview other. Interview Other decreases to 1 and all-category interview count to 6; accepted remains 2 and total remains 130. This supersedes the earlier claim that both acceptances followed interviews.
 
 Layout refinement: compact viewBox height 545, down from 880, with closer PhD/Other rows and labels enlarged from 16 to 18 SVG units (counts 18→20; percentages 14→16). Job assessment stays aligned with Applied jobs. All counts, percentages and paths are unchanged; all ribbons and node heights use the same scale.
+
+Wispr Flow outcome update, 2026-11-09: the existing scientist application changed from applied to rejected. Rejected increases from 34 to 35, direct job rejections from 29 to 30, and Applied jobs endpoints decrease from 86 to 85. Total included opportunities remains 130. No completed selection-round count was provided.
