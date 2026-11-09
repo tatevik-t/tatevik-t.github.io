@@ -1,7 +1,7 @@
 {
   "year": 2026,
   "updated_on": "2026-11-09",
-  "total": 130,
+  "total": 135,
   "tracker_total": 125,
   "additional_achievement_ids": [
     "avito-ds-engineer-2026",
@@ -40,12 +40,12 @@
     {
       "id": "applied-jobs",
       "label": "Applied jobs",
-      "value": 118,
+      "value": 123,
       "x": 25,
       "y": 70,
       "color": "source",
       "label_position": "above",
-      "ends_here": 85
+      "ends_here": 90
     },
     {
       "id": "applied-phd",
@@ -235,19 +235,20 @@
     }
   ],
   "category_totals": {
-    "jobs": 118,
+    "jobs": 123,
     "phd": 6,
     "other": 6
   },
-  "applied_total": 130,
+  "applied_total": 135,
   "applied_by_category": {
-    "jobs": 118,
+    "jobs": 123,
     "phd": 6,
     "other": 6
   },
-  "percentage_basis": "All 130 included opportunities; eight withdrawn records are excluded from the chart and percentage denominator.",
+  "percentage_basis": "All 135 included opportunities; eight withdrawn records are excluded from the chart and percentage denominator.",
   "historical_applied_total": 132,
   "included_tracker_total": 123,
   "excluded_withdrawn": 8,
-  "flow_scale": 2.2
+  "flow_scale": 2.2,
+  "user_reported_additional_jobs": 5
 }
