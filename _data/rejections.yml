@@ -3,8 +3,18 @@
 # Omit position titles from notes; treat them as personal information in future entries.
 # Each organization uses its own icon; reuse it for repeat attempts and choose an unused icon for new organizations.
 # stages counts completed selection rounds after application; omit until confirmed.
-reviewed_on: "2026-11-08"
+reviewed_on: "2026-11-09"
 entries:
+  - id: t-bank-2026-11-09
+    company: T-Bank
+    date: "2026-11-09"
+    category: jobs
+    icon: shield
+    lang: ru
+    quote: "К сожалению, сейчас мы не можем продолжить общение с кандидатом, потому что он не подходит по опыту. На эту позицию мы ищем специалистов с более сильными навыками в ML и продакшене моделей."
+    translation: "Unfortunately, we cannot continue the process with the candidate because their experience does not match our requirements. For this position, we are looking for specialists with stronger skills in ML and deploying models to production."
+    note: "Second T-Bank rejection, received through a referral. Observed on 9 November; the actual decision date is unknown."
+
   - id: google-deepmind-2026-11-08
     company: Google DeepMind
     date: "2026-11-08"
