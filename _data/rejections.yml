@@ -5,6 +5,13 @@
 # stages counts completed selection rounds after application; omit until confirmed.
 reviewed_on: "2026-11-09"
 entries:
+  - id: cloudlinux-2026-11-09
+    company: CloudLinux
+    date: "2026-11-09"
+    category: jobs
+    icon: lock
+    quote: "We have received a high volume of applications, and after careful consideration, we regret to inform you that we will not be moving forward with your application at this time."
+
   - id: t-bank-2026-11-09
     company: T-Bank
     date: "2026-11-09"
