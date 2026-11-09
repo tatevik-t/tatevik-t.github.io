@@ -1,0 +1,253 @@
+{
+  "year": 2026,
+  "updated_on": "2026-11-09",
+  "total": 130,
+  "tracker_total": 125,
+  "additional_achievement_ids": [
+    "avito-ds-engineer-2026",
+    "itu-2026",
+    "bostongene-2026",
+    "deep-origin-2026",
+    "ku-2026",
+    "princint-2026",
+    "metr-2026"
+  ],
+  "stage_totals": {
+    "assessment": {
+      "jobs": 1,
+      "phd": 0,
+      "other": 2
+    },
+    "interview": {
+      "jobs": 3,
+      "phd": 2,
+      "other": 1
+    }
+  },
+  "outcomes": [
+    {
+      "id": "offer",
+      "label": "Accepted",
+      "total": 2
+    },
+    {
+      "id": "rejected",
+      "label": "Rejected",
+      "total": 34
+    }
+  ],
+  "nodes": [
+    {
+      "id": "applied-jobs",
+      "label": "Applied jobs",
+      "value": 118,
+      "x": 25,
+      "y": 70,
+      "color": "source",
+      "label_position": "above",
+      "ends_here": 86
+    },
+    {
+      "id": "applied-phd",
+      "label": "Applied PhDs",
+      "value": 6,
+      "x": 25,
+      "y": 390,
+      "color": "phd",
+      "label_position": "above",
+      "ends_here": 2
+    },
+    {
+      "id": "applied-other",
+      "label": "Applied other",
+      "value": 6,
+      "x": 25,
+      "y": 485,
+      "color": "other",
+      "label_position": "above",
+      "ends_here": 4
+    },
+    {
+      "id": "assessment-jobs",
+      "label": "Online assessment · jobs",
+      "value": 1,
+      "x": 325,
+      "y": 70,
+      "color": "assessment",
+      "label_position": "above",
+      "ends_here": 0
+    },
+    {
+      "id": "assessment-phd",
+      "label": "Online assessment · PhD",
+      "value": 0,
+      "x": 325,
+      "y": 390,
+      "color": "assessment",
+      "label_position": "above",
+      "ends_here": 0
+    },
+    {
+      "id": "assessment-other",
+      "label": "Online assessment · other",
+      "value": 2,
+      "x": 325,
+      "y": 485,
+      "color": "assessment",
+      "label_position": "above",
+      "ends_here": 0
+    },
+    {
+      "id": "interview-jobs",
+      "label": "Interview · jobs",
+      "value": 3,
+      "x": 625,
+      "y": 110,
+      "color": "interview",
+      "label_position": "above",
+      "ends_here": 1
+    },
+    {
+      "id": "interview-phd",
+      "label": "Interview · PhD",
+      "value": 2,
+      "x": 625,
+      "y": 380,
+      "color": "interview",
+      "label_position": "above",
+      "ends_here": 1
+    },
+    {
+      "id": "interview-other",
+      "label": "Interview · other",
+      "value": 1,
+      "x": 625,
+      "y": 495,
+      "color": "interview",
+      "label_position": "above",
+      "ends_here": 0
+    },
+    {
+      "id": "offer",
+      "label": "Accepted",
+      "value": 2,
+      "x": 985,
+      "y": 450,
+      "color": "offer",
+      "label_position": "right",
+      "ends_here": 0
+    },
+    {
+      "id": "rejected",
+      "label": "Rejected",
+      "value": 34,
+      "x": 985,
+      "y": 255,
+      "color": "rejected",
+      "label_position": "right",
+      "ends_here": 0
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 3,
+      "value": 1,
+      "color": "assessment",
+      "label": "Applied jobs → online assessment (user-confirmed path)"
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "value": 2,
+      "color": "interview",
+      "label": "Applied jobs → job interview"
+    },
+    {
+      "source": 0,
+      "target": 10,
+      "value": 29,
+      "color": "rejected",
+      "label": "Applied jobs → rejected; no recorded interview path"
+    },
+    {
+      "source": 1,
+      "target": 7,
+      "value": 2,
+      "color": "interview",
+      "label": "Applied PhDs → PhD interview"
+    },
+    {
+      "source": 1,
+      "target": 10,
+      "value": 2,
+      "color": "rejected",
+      "label": "Applied PhDs → rejected; no recorded interview path"
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "value": 2,
+      "color": "assessment",
+      "label": "Applied other → online assessment for other opportunities"
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "value": 1,
+      "color": "assessment",
+      "label": "Other online assessments → interviews"
+    },
+    {
+      "source": 6,
+      "target": 10,
+      "value": 2,
+      "color": "rejected",
+      "label": "Job interview → rejected"
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "value": 1,
+      "color": "rejected",
+      "label": "PhD interview → rejected"
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "value": 1,
+      "color": "offer",
+      "label": "Other interview → accepted"
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "value": 1,
+      "color": "assessment",
+      "label": "Job online assessment → job interview"
+    },
+    {
+      "source": 5,
+      "target": 9,
+      "value": 1,
+      "color": "offer",
+      "label": "Other online assessment → accepted directly, without interview"
+    }
+  ],
+  "category_totals": {
+    "jobs": 118,
+    "phd": 6,
+    "other": 6
+  },
+  "applied_total": 130,
+  "applied_by_category": {
+    "jobs": 118,
+    "phd": 6,
+    "other": 6
+  },
+  "percentage_basis": "All 130 included opportunities; eight withdrawn records are excluded from the chart and percentage denominator.",
+  "historical_applied_total": 132,
+  "included_tracker_total": 123,
+  "excluded_withdrawn": 8,
+  "flow_scale": 2.2
+}

@@ -94,6 +94,7 @@ rejection_wall: true
     <div class="rw-empty" hidden><svg aria-hidden="true" viewBox="0 0 32 32"><use href="#rw-icon-orbit"></use></svg><h3>No achievements here yet.</h3><p>Try another search or category.</p><button type="button" id="rw-reset">Show the whole collection</button></div>
     <noscript><style>.rejection-wall .rw-detail-content[hidden]{display:block!important}.rw-badge-button{pointer-events:none}</style><p class="rw-noscript">All badges and email excerpts are shown. Enable JavaScript to search, filter, and open badges.</p></noscript>
   </section>
+  {% include search-season.html %}
   <dialog id="rw-dialog" class="rw-dialog" aria-label="Achievement details"><button type="button" class="rw-dialog-close" aria-label="Close achievement details">×</button><div class="rw-dialog-content"></div></dialog>
   <aside class="rw-note" aria-label="About this collection"><span aria-hidden="true">✳</span><div><h2>A rejection is an outcome. Trying is an achievement.</h2><p>Short excerpts from my decision emails and application portals, checked on {{ site.data.rejections.reviewed_on | date: "%d %B %Y" }}. Dates refer to the decision notice; when the decision date is unknown, the observation date is labeled in the entry. Repeat notices for the same opportunity count once.</p><p>The » count records stages completed after applying. Counts appear only for attempts that progressed beyond the application stage; each badge shows the highest count for that organization.</p></div><a href="#rw-title" aria-label="Back to top">↑</a></aside>
 </main>

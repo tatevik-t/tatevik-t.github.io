@@ -1,0 +1,52 @@
+{% assign season = site.data.search_season_2026 %}
+<section id="rw-season" class="rw-season" aria-labelledby="rw-season-title">
+  <div class="rw-section-heading">
+    <div><p class="rw-eyebrow">THE SEARCH, STILL IN PROGRESS</p><h2 id="rw-season-title">{{ season.year }} search season</h2></div>
+    <p>Combined snapshot · <time datetime="{{ season.updated_on }}">{{ season.updated_on | date: "%d %B %Y" }}</time></p>
+  </div>
+  <div class="rw-season-intro">
+    <p>From application to the next conversation.</p>
+    <p class="rw-season-total"><strong>{{ season.total }}</strong><span>recorded opportunities<br>{{ season.year }} applications &amp; decisions</span></p>
+  </div>
+  <figure class="rw-sankey">
+    <div class="rw-sankey-scroll" tabindex="0" role="region" aria-label="2026 application flow diagram; scroll horizontally on small screens">
+      <svg viewBox="0 0 1245 545" role="img" aria-labelledby="rw-sankey-title rw-sankey-desc">
+        <title id="rw-sankey-title">{{ season.year }} Jobs, PhD and other opportunities through application, assessment and interview to outcomes</title>
+        <desc id="rw-sankey-desc">{{ season.total }} recorded opportunities, with percentages of this total shown beside each count. The diagram starts with Applied jobs: 118, Applied PhDs: 6, and Applied other: 6. Assessment and interview stages are separate for each category. One job and two other opportunities pass through online assessment. One Other opportunity is accepted directly after assessment; the other continues to interview. Stages with zero recorded counts are omitted. Recorded interviews: jobs three, PhD two, other one. Two program acceptances share one Accepted outcome; 34 rejections share one Rejected outcome. Applications without a displayed next stage and interviews without a displayed outcome end at their respective nodes. Each opportunity counts once.</desc>
+        {% for link in season.links %}
+          {% assign link_index = forloop.index0 %}
+          {% assign source = season.nodes[link.source] %}
+          {% assign target = season.nodes[link.target] %}
+          {% assign source_y = source.y %}
+          {% assign target_y = target.y %}
+          {% for previous in season.links %}
+            {% if forloop.index0 == link_index %}{% break %}{% endif %}
+            {% assign previous_height = previous.value | times: season.flow_scale %}
+            {% if previous.source == link.source %}{% assign source_y = source_y | plus: previous_height %}{% endif %}
+            {% if previous.target == link.target %}{% assign target_y = target_y | plus: previous_height %}{% endif %}
+          {% endfor %}
+          {% assign source_x = source.x | plus: 12 %}
+          {% assign bend_x = source_x | plus: target.x | divided_by: 2.0 %}
+          {% assign height = link.value | times: season.flow_scale %}
+          {% assign source_bottom = source_y | plus: height %}
+          {% assign target_bottom = target_y | plus: height %}
+          <path class="rw-sankey-link rw-flow-{{ link.color }}" d="M{{ source_x }} {{ source_y }} C{{ bend_x }} {{ source_y }} {{ bend_x }} {{ target_y }} {{ target.x }} {{ target_y }} L{{ target.x }} {{ target_bottom }} C{{ bend_x }} {{ target_bottom }} {{ bend_x }} {{ source_bottom }} {{ source_x }} {{ source_bottom }} Z"><title>{{ link.label | escape }}: {{ link.value }} ({{ link.value | times: 100.0 | divided_by: season.total | round: 1 }}% of all opportunities)</title></path>
+        {% endfor %}
+        {% for node in season.nodes %}
+          {% if node.value > 0 %}
+          {% assign height = node.value | times: season.flow_scale %}
+          {% assign center = height | divided_by: 2.0 | plus: node.y %}
+          <rect class="rw-sankey-node rw-flow-{{ node.color }}" x="{{ node.x }}" y="{{ node.y }}" width="12" height="{{ height }}" rx="2"><title>{{ node.label | escape }}: {{ node.value }} ({{ node.value | times: 100.0 | divided_by: season.total | round: 1 }}% of all opportunities){% if node.ends_here > 0 %}; {{ node.ends_here }} end here without a further displayed outcome{% endif %}{% if node.value == 0 %}; no assessments recorded, not evidence none occurred{% endif %}</title></rect>
+          {% if node.label_position == 'above' %}
+          <text x="{{ node.x }}" y="{{ node.y | minus: 38 }}" class="rw-sankey-label">{{ node.label | escape }}</text>
+          <text x="{{ node.x }}" y="{{ node.y | minus: 13 }}" class="rw-sankey-count"><tspan class="rw-sankey-value">{{ node.value }}</tspan><tspan dx="7" class="rw-sankey-percent">({{ node.value | times: 100.0 | divided_by: season.total | round: 1 }}%)</tspan></text>
+          {% else %}
+          <text x="{{ node.x | plus: 24 }}" y="{{ center | minus: 4 }}" class="rw-sankey-label">{{ node.label | escape }}</text>
+          <text x="{{ node.x | plus: 24 }}" y="{{ center | plus: 20 }}" class="rw-sankey-count"><tspan class="rw-sankey-value">{{ node.value }}</tspan><tspan dx="7" class="rw-sankey-percent">({{ node.value | times: 100.0 | divided_by: season.total | round: 1 }}%)</tspan></text>
+          {% endif %}
+          {% endif %}
+        {% endfor %}
+      </svg>
+    </div>
+  </figure>
+</section>
