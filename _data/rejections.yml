@@ -13,7 +13,6 @@ entries:
     lang: ru
     quote: "К сожалению, сейчас мы не можем продолжить общение с кандидатом, потому что он не подходит по опыту. На эту позицию мы ищем специалистов с более сильными навыками в ML и продакшене моделей."
     translation: "Unfortunately, we cannot continue the process with the candidate because their experience does not match our requirements. For this position, we are looking for specialists with stronger skills in ML and deploying models to production."
-    note: "Second T-Bank rejection, received through a referral. Observed on 9 November; the actual decision date is unknown."
 
   - id: google-deepmind-2026-11-08
     company: Google DeepMind
