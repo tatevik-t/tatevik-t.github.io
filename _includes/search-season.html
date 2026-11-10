@@ -10,11 +10,14 @@
   </div>
   <figure class="rw-sankey">
     <div class="rw-sankey-scroll" tabindex="0" role="region" aria-label="2026 application flow diagram; scroll horizontally on small screens">
-      <svg viewBox="0 0 1245 545" role="img" aria-labelledby="rw-sankey-title rw-sankey-desc">
+      <svg viewBox="0 0 1555 670" role="img" aria-labelledby="rw-sankey-title rw-sankey-desc">
         <title id="rw-sankey-title">{{ season.year }} Jobs, PhD and other opportunities through application, assessment and interview to outcomes</title>
-        <desc id="rw-sankey-desc">{{ season.total }} recorded opportunities, with percentages of this total shown beside each count. The diagram starts with Applied jobs: {{ season.applied_by_category.jobs }}, Applied PhDs: {{ season.applied_by_category.phd }}, and Applied other: {{ season.applied_by_category.other }}. {% if season.job_focus %}The approximate job-focus groups feed Applied jobs; their percentages use {{ season.job_focus.total }} jobs and unspecified roles are grouped under Other. {% endif %}Assessment and interview stages are separate for each category. One job and two other opportunities pass through online assessment. One Other opportunity is accepted directly after assessment; the other continues to interview. Stages with zero recorded counts are omitted. Recorded interviews: jobs three, PhD two, other one. {% for outcome in season.outcomes %}{{ outcome.total }} {{ outcome.label | downcase }} opportunities share one {{ outcome.label }} outcome. {% endfor %}Applications without a displayed next stage and interviews without a displayed outcome end at their respective nodes. Each opportunity counts once.</desc>
+        <desc id="rw-sankey-desc">{{ season.total }} recorded opportunities, with percentages of this total shown beside each count. The diagram starts with Applied jobs: {{ season.applied_by_category.jobs }}, Applied PhDs: {{ season.applied_by_category.phd }}, and Applied other: {{ season.applied_by_category.other }}. {% if season.job_focus %}The approximate job-focus groups feed Applied jobs; their percentages use {{ season.job_focus.total }} jobs and unspecified roles are grouped under Other. {% endif %}Assessment and interview stages are separate for each category. Recorded online assessments: jobs {{ season.stage_totals.assessment.jobs }}, PhD {{ season.stage_totals.assessment.phd }}, other {{ season.stage_totals.assessment.other }}. One Other opportunity is accepted directly after assessment; the other continues to interview. Stages with zero recorded counts are omitted. Recorded interviews: jobs {{ season.stage_totals.interview.jobs }}, PhD {{ season.stage_totals.interview.phd }}, other {{ season.stage_totals.interview.other }}. {% for outcome in season.outcomes %}{{ outcome.total }} {{ outcome.label | downcase }} opportunities share one {{ outcome.label }} outcome. {% endfor %}Applications without a displayed next stage and interviews without a displayed outcome end at their respective nodes. Each opportunity counts once.</desc>
+        <text x="25" y="18" class="rw-sankey-heading">JOB FOCUS · APPROXIMATE</text>
         {% for link in season.links %}
           {% assign link_index = forloop.index0 %}
+          {% assign percentage_total = link.percentage_total | default: season.total %}
+          {% assign percentage_label = link.percentage_label | default: "all opportunities" %}
           {% assign source = season.nodes[link.source] %}
           {% assign target = season.nodes[link.target] %}
           {% assign source_y = source.y %}
@@ -30,19 +33,25 @@
           {% assign height = link.value | times: season.flow_scale %}
           {% assign source_bottom = source_y | plus: height %}
           {% assign target_bottom = target_y | plus: height %}
-          <path class="rw-sankey-link rw-flow-{{ link.color }}" d="M{{ source_x }} {{ source_y }} C{{ bend_x }} {{ source_y }} {{ bend_x }} {{ target_y }} {{ target.x }} {{ target_y }} L{{ target.x }} {{ target_bottom }} C{{ bend_x }} {{ target_bottom }} {{ bend_x }} {{ source_bottom }} {{ source_x }} {{ source_bottom }} Z"><title>{{ link.label | escape }}: {{ link.value }} ({{ link.value | times: 100.0 | divided_by: season.total | round: 1 }}% of all opportunities)</title></path>
+          <path class="rw-sankey-link rw-flow-{{ link.color }}" d="M{{ source_x }} {{ source_y }} C{{ bend_x }} {{ source_y }} {{ bend_x }} {{ target_y }} {{ target.x }} {{ target_y }} L{{ target.x }} {{ target_bottom }} C{{ bend_x }} {{ target_bottom }} {{ bend_x }} {{ source_bottom }} {{ source_x }} {{ source_bottom }} Z"><title>{{ link.label | escape }}: {{ link.value }} ({{ link.value | times: 100.0 | divided_by: percentage_total | round: 1 }}% of {{ percentage_label }})</title></path>
         {% endfor %}
         {% for node in season.nodes %}
           {% if node.value > 0 %}
+          {% assign percentage_total = node.percentage_total | default: season.total %}
+          {% assign percentage_label = node.percentage_label | default: "all opportunities" %}
           {% assign height = node.value | times: season.flow_scale %}
           {% assign center = height | divided_by: 2.0 | plus: node.y %}
-          <rect class="rw-sankey-node rw-flow-{{ node.color }}" x="{{ node.x }}" y="{{ node.y }}" width="12" height="{{ height }}" rx="2"><title>{{ node.label | escape }}: {{ node.value }} ({{ node.value | times: 100.0 | divided_by: season.total | round: 1 }}% of all opportunities){% if node.ends_here > 0 %}; {{ node.ends_here }} end here without a further displayed outcome{% endif %}{% if node.value == 0 %}; no assessments recorded, not evidence none occurred{% endif %}</title></rect>
+          <rect class="rw-sankey-node rw-flow-{{ node.color }}" x="{{ node.x }}" y="{{ node.y }}" width="12" height="{{ height }}" rx="2"><title>{{ node.label | escape }}: {{ node.value }} ({{ node.value | times: 100.0 | divided_by: percentage_total | round: 1 }}% of {{ percentage_label }}){% if node.approximate %}; approximate classification by role focus, with unspecified roles grouped under Other{% endif %}{% if node.ends_here > 0 %}; {{ node.ends_here }} end here without a further displayed outcome{% endif %}{% if node.value == 0 %}; no assessments recorded, not evidence none occurred{% endif %}</title></rect>
           {% if node.label_position == 'above' %}
-          <text x="{{ node.x }}" y="{{ node.y | minus: 38 }}" class="rw-sankey-label">{{ node.label | escape }}</text>
-          <text x="{{ node.x }}" y="{{ node.y | minus: 13 }}" class="rw-sankey-count"><tspan class="rw-sankey-value">{{ node.value }}</tspan><tspan dx="7" class="rw-sankey-percent">({{ node.value | times: 100.0 | divided_by: season.total | round: 1 }}%)</tspan></text>
+          {% if node.label_lines %}
+          <text x="{{ node.x }}" y="{{ node.y | minus: 72 }}" class="rw-sankey-label">{% for line in node.label_lines %}<tspan x="{{ node.x }}"{% unless forloop.first %} dy="28"{% endunless %}>{{ line | escape }}</tspan>{% endfor %}</text>
+          {% else %}
+          <text x="{{ node.x }}" y="{{ node.y | minus: 44 }}" class="rw-sankey-label">{{ node.label | escape }}</text>
+          {% endif %}
+          <text x="{{ node.x }}" y="{{ node.y | minus: 13 }}" class="rw-sankey-count"><tspan class="rw-sankey-value">{{ node.value }}</tspan><tspan dx="7" class="rw-sankey-percent">({{ node.value | times: 100.0 | divided_by: percentage_total | round: 1 }}%)</tspan></text>
           {% else %}
           <text x="{{ node.x | plus: 24 }}" y="{{ center | minus: 4 }}" class="rw-sankey-label">{{ node.label | escape }}</text>
-          <text x="{{ node.x | plus: 24 }}" y="{{ center | plus: 20 }}" class="rw-sankey-count"><tspan class="rw-sankey-value">{{ node.value }}</tspan><tspan dx="7" class="rw-sankey-percent">({{ node.value | times: 100.0 | divided_by: season.total | round: 1 }}%)</tspan></text>
+          <text x="{{ node.x | plus: 24 }}" y="{{ center | plus: 20 }}" class="rw-sankey-count"><tspan class="rw-sankey-value">{{ node.value }}</tspan><tspan dx="7" class="rw-sankey-percent">({{ node.value | times: 100.0 | divided_by: percentage_total | round: 1 }}%)</tspan></text>
           {% endif %}
           {% endif %}
         {% endfor %}

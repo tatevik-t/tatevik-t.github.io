@@ -1,8 +1,8 @@
 {
   "year": 2026,
   "updated_on": "2026-11-10",
-  "total": 136,
-  "tracker_total": 125,
+  "total": 144,
+  "tracker_total": 131,
   "additional_achievement_ids": [
     "avito-ds-engineer-2026",
     "itu-2026",
@@ -15,12 +15,12 @@
   ],
   "stage_totals": {
     "assessment": {
-      "jobs": 1,
+      "jobs": 2,
       "phd": 0,
       "other": 2
     },
     "interview": {
-      "jobs": 3,
+      "jobs": 4,
       "phd": 2,
       "other": 1
     }
@@ -41,19 +41,19 @@
     {
       "id": "applied-jobs",
       "label": "Applied jobs",
-      "value": 124,
-      "x": 25,
-      "y": 70,
+      "value": 132,
+      "x": 335,
+      "y": 150,
       "color": "source",
       "label_position": "above",
-      "ends_here": 89
+      "ends_here": 95
     },
     {
       "id": "applied-phd",
       "label": "Applied PhDs",
       "value": 6,
-      "x": 25,
-      "y": 390,
+      "x": 335,
+      "y": 515,
       "color": "phd",
       "label_position": "above",
       "ends_here": 2
@@ -62,8 +62,8 @@
       "id": "applied-other",
       "label": "Applied other",
       "value": 6,
-      "x": 25,
-      "y": 485,
+      "x": 335,
+      "y": 610,
       "color": "other",
       "label_position": "above",
       "ends_here": 4
@@ -71,19 +71,19 @@
     {
       "id": "assessment-jobs",
       "label": "Online assessment · jobs",
-      "value": 1,
-      "x": 325,
-      "y": 70,
+      "value": 2,
+      "x": 635,
+      "y": 150,
       "color": "assessment",
       "label_position": "above",
-      "ends_here": 0
+      "ends_here": 1
     },
     {
       "id": "assessment-phd",
       "label": "Online assessment · PhD",
       "value": 0,
-      "x": 325,
-      "y": 390,
+      "x": 635,
+      "y": 515,
       "color": "assessment",
       "label_position": "above",
       "ends_here": 0
@@ -92,8 +92,8 @@
       "id": "assessment-other",
       "label": "Online assessment · other",
       "value": 2,
-      "x": 325,
-      "y": 485,
+      "x": 635,
+      "y": 610,
       "color": "assessment",
       "label_position": "above",
       "ends_here": 0
@@ -101,19 +101,19 @@
     {
       "id": "interview-jobs",
       "label": "Interview · jobs",
-      "value": 3,
-      "x": 625,
-      "y": 110,
+      "value": 4,
+      "x": 935,
+      "y": 190,
       "color": "interview",
       "label_position": "above",
-      "ends_here": 1
+      "ends_here": 2
     },
     {
       "id": "interview-phd",
       "label": "Interview · PhD",
       "value": 2,
-      "x": 625,
-      "y": 380,
+      "x": 935,
+      "y": 505,
       "color": "interview",
       "label_position": "above",
       "ends_here": 1
@@ -122,8 +122,8 @@
       "id": "interview-other",
       "label": "Interview · other",
       "value": 1,
-      "x": 625,
-      "y": 495,
+      "x": 935,
+      "y": 620,
       "color": "interview",
       "label_position": "above",
       "ends_here": 0
@@ -132,8 +132,8 @@
       "id": "offer",
       "label": "Accepted",
       "value": 2,
-      "x": 985,
-      "y": 450,
+      "x": 1295,
+      "y": 575,
       "color": "offer",
       "label_position": "right",
       "ends_here": 0
@@ -142,25 +142,93 @@
       "id": "rejected",
       "label": "Rejected",
       "value": 37,
-      "x": 985,
-      "y": 255,
+      "x": 1295,
+      "y": 335,
       "color": "rejected",
       "label_position": "right",
       "ends_here": 0
+    },
+    {
+      "id": "focus-ml",
+      "label": "ML Engineer / Applied Scientist",
+      "label_lines": [
+        "ML Engineer /",
+        "Applied Scientist"
+      ],
+      "value": 44,
+      "x": 25,
+      "y": 120,
+      "color": "focus-ml",
+      "label_position": "above",
+      "ends_here": 0,
+      "percentage_total": 132,
+      "percentage_label": "job opportunities",
+      "approximate": true
+    },
+    {
+      "id": "focus-research",
+      "label": "Research Scientist / Research Engineer",
+      "label_lines": [
+        "Research Scientist /",
+        "Research Engineer"
+      ],
+      "value": 34,
+      "x": 25,
+      "y": 290,
+      "color": "focus-research",
+      "label_position": "above",
+      "ends_here": 0,
+      "percentage_total": 132,
+      "percentage_label": "job opportunities",
+      "approximate": true
+    },
+    {
+      "id": "focus-safety",
+      "label": "AI Safety / ML Security / Interpretability",
+      "label_lines": [
+        "AI Safety / ML Security /",
+        "Interpretability"
+      ],
+      "value": 25,
+      "x": 25,
+      "y": 440,
+      "color": "focus-safety",
+      "label_position": "above",
+      "ends_here": 0,
+      "percentage_total": 132,
+      "percentage_label": "job opportunities",
+      "approximate": true
+    },
+    {
+      "id": "focus-other",
+      "label": "Software / Data Science / Other",
+      "label_lines": [
+        "Software / Data Science /",
+        "Other"
+      ],
+      "value": 29,
+      "x": 25,
+      "y": 580,
+      "color": "focus-other",
+      "label_position": "above",
+      "ends_here": 0,
+      "percentage_total": 132,
+      "percentage_label": "job opportunities",
+      "approximate": true
     }
   ],
   "links": [
     {
       "source": 0,
       "target": 3,
-      "value": 1,
+      "value": 2,
       "color": "assessment",
       "label": "Applied jobs → online assessment (user-confirmed path)"
     },
     {
       "source": 0,
       "target": 6,
-      "value": 2,
+      "value": 3,
       "color": "interview",
       "label": "Applied jobs → job interview"
     },
@@ -233,23 +301,158 @@
       "value": 1,
       "color": "offer",
       "label": "Other online assessment → accepted directly, without interview"
+    },
+    {
+      "source": 11,
+      "target": 0,
+      "value": 44,
+      "color": "focus-ml",
+      "label": "Approximate job focus: ML Engineer / Applied Scientist → Applied jobs",
+      "percentage_total": 132,
+      "percentage_label": "job opportunities"
+    },
+    {
+      "source": 12,
+      "target": 0,
+      "value": 34,
+      "color": "focus-research",
+      "label": "Approximate job focus: Research Scientist / Research Engineer → Applied jobs",
+      "percentage_total": 132,
+      "percentage_label": "job opportunities"
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "value": 25,
+      "color": "focus-safety",
+      "label": "Approximate job focus: AI Safety / ML Security / Interpretability → Applied jobs",
+      "percentage_total": 132,
+      "percentage_label": "job opportunities"
+    },
+    {
+      "source": 14,
+      "target": 0,
+      "value": 29,
+      "color": "focus-other",
+      "label": "Approximate job focus: Software / Data Science / Other → Applied jobs",
+      "percentage_total": 132,
+      "percentage_label": "job opportunities"
     }
   ],
   "category_totals": {
-    "jobs": 124,
+    "jobs": 132,
     "phd": 6,
     "other": 6
   },
-  "applied_total": 136,
+  "applied_total": 144,
   "applied_by_category": {
-    "jobs": 124,
+    "jobs": 132,
     "phd": 6,
     "other": 6
   },
-  "percentage_basis": "All 136 included opportunities; eight withdrawn records are excluded from the chart and percentage denominator.",
+  "percentage_basis": "All 144 included identifiable opportunities. Two unidentified user-reported job applications and withdrawn records are excluded from the chart and percentage denominator.",
   "historical_applied_total": 132,
-  "included_tracker_total": 123,
+  "included_tracker_total": 129,
   "excluded_withdrawn": 8,
-  "flow_scale": 2.2,
-  "user_reported_additional_jobs": 5
+  "flow_scale": 1.7,
+  "job_focus": {
+    "total": 132,
+    "approximate": true,
+    "percentage_basis": "132 identifiable job opportunities; all other diagram percentages use 144 total opportunities.",
+    "method": "Mutually exclusive manual classification from role titles and recorded context: safety/security/interpretability first, research roles second, ML/applied AI third, software/data science/other/unspecified last. General evaluations alone do not imply AI safety. Three of the five previously reported jobs are matched to tracker roles; their existing Other allocation awaits a separate focus review. The two unidentified reports are excluded from the chart at the user’s request. Resolution Research Scientist is classified as safety using its recorded theoretical AI alignment focus.",
+    "groups": [
+      {
+        "id": "ml",
+        "label": "ML Engineer / Applied Scientist",
+        "total": 44
+      },
+      {
+        "id": "research",
+        "label": "Research Scientist / Research Engineer",
+        "total": 34
+      },
+      {
+        "id": "safety",
+        "label": "AI Safety / ML Security / Interpretability",
+        "total": 25
+      },
+      {
+        "id": "other",
+        "label": "Software / Data Science / Other",
+        "total": 29
+      }
+    ]
+  },
+  "user_reported_additional_jobs": 3,
+  "tracker_application_updates": [
+    {
+      "application_date": "2026-11-10",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        62,
+        99,
+        126,
+        139
+      ],
+      "added_jobs": 4,
+      "focus_counts": {
+        "research": 3,
+        "other": 1
+      }
+    },
+    {
+      "application_date": "2026-11-10",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        101,
+        215
+      ],
+      "added_jobs": 2,
+      "focus_counts": {
+        "other": 2
+      }
+    },
+    {
+      "application_date": "2026-11-10",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        253
+      ],
+      "added_jobs": 1,
+      "focus_counts": {
+        "safety": 1
+      }
+    },
+    {
+      "application_date": "2026-11-10",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        286,
+        287,
+        296
+      ],
+      "added_jobs": 3,
+      "focus_counts": {
+        "ml": 1,
+        "research": 2
+      }
+    }
+  ],
+  "reconciliation": {
+    "as_of": "2026-11-10",
+    "dated_tracker_jobs": 126,
+    "undated_tracker_jobs": 1,
+    "supplementary_job_decisions_without_current_matching_submission": 5,
+    "identified_jobs": 132,
+    "user_reported_jobs_matched_to_tracker": 3,
+    "user_reported_jobs_still_unidentified": 2,
+    "today_dated_jobs": 10,
+    "join_rule": "Count each opportunity once across tracker, achievement decisions and user reports; unknown application dates are not new applications on the rejection date.",
+    "sardine_note": "Earlier working notes record a tracker row; current read finds only the distinct withdrawn analyst lead. The ML Engineer rejection counts once via its achievement regardless of tracker presence.",
+    "included_job_total": 132,
+    "included_overall_total": 144,
+    "included_unidentified_jobs": 0,
+    "excluded_unidentified_jobs": 2,
+    "user_reported_jobs_note": "Keep the three identified reports as matches to existing tracker submissions, not additional counts. Exclude the remaining two reports until identified, per user instruction."
+  }
 }
