@@ -5,6 +5,13 @@
 # stages counts completed selection rounds after application; omit until confirmed.
 reviewed_on: "2026-11-10"
 entries:
+  - id: saferai-2026-11-10
+    company: SaferAI
+    date: "2026-11-10"
+    category: jobs
+    icon: leaf
+    quote: "After carefully reviewing your answers alongside others, we have decided not to move forward with your application at this time."
+
   - id: sardine-2026-11-10
     company: Sardine AI
     date: "2026-11-10"

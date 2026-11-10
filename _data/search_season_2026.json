@@ -34,7 +34,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "total": 36
+      "total": 37
     }
   ],
   "nodes": [
@@ -46,7 +46,7 @@
       "y": 70,
       "color": "source",
       "label_position": "above",
-      "ends_here": 90
+      "ends_here": 89
     },
     {
       "id": "applied-phd",
@@ -141,7 +141,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "value": 36,
+      "value": 37,
       "x": 985,
       "y": 255,
       "color": "rejected",
@@ -167,7 +167,7 @@
     {
       "source": 0,
       "target": 10,
-      "value": 31,
+      "value": 32,
       "color": "rejected",
       "label": "Applied jobs → rejected; no recorded interview path"
     },
