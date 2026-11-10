@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_on": "2026-11-09",
+  "updated_on": "2026-11-10",
   "total": 135,
   "tracker_total": 125,
   "additional_achievement_ids": [
@@ -33,7 +33,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "total": 35
+      "total": 36
     }
   ],
   "nodes": [
@@ -45,7 +45,7 @@
       "y": 70,
       "color": "source",
       "label_position": "above",
-      "ends_here": 90
+      "ends_here": 89
     },
     {
       "id": "applied-phd",
@@ -140,7 +140,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "value": 35,
+      "value": 36,
       "x": 985,
       "y": 255,
       "color": "rejected",
@@ -166,7 +166,7 @@
     {
       "source": 0,
       "target": 10,
-      "value": 30,
+      "value": 31,
       "color": "rejected",
       "label": "Applied jobs → rejected; no recorded interview path"
     },
@@ -250,5 +250,10 @@
   "included_tracker_total": 123,
   "excluded_withdrawn": 8,
   "flow_scale": 2.2,
-  "user_reported_additional_jobs": 5
+  "user_reported_additional_jobs": 5,
+  "pending_overlap_confirmation": {
+    "achievement_id": "sardine-2026-11-10",
+    "provisionally_included_in": "user_reported_additional_jobs",
+    "reason": "User has not yet confirmed whether this application belongs to the five additional jobs."
+  }
 }

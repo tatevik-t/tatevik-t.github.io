@@ -3,8 +3,15 @@
 # Omit position titles from notes; treat them as personal information in future entries.
 # Each organization uses its own icon; reuse it for repeat attempts and choose an unused icon for new organizations.
 # stages counts completed selection rounds after application; omit until confirmed.
-reviewed_on: "2026-11-09"
+reviewed_on: "2026-11-10"
 entries:
+  - id: sardine-2026-11-10
+    company: Sardine AI
+    date: "2026-11-10"
+    category: jobs
+    icon: bridge
+    quote: "After careful consideration, we’ve decided to move forward with other candidates whose experience matches the specific requirements for this role."
+
   - id: wispr-flow-2026-11-09
     company: Wispr Flow
     date: "2026-11-09"
