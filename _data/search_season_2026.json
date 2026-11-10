@@ -1,7 +1,7 @@
 {
   "year": 2026,
   "updated_on": "2026-11-10",
-  "total": 135,
+  "total": 136,
   "tracker_total": 125,
   "additional_achievement_ids": [
     "avito-ds-engineer-2026",
@@ -10,7 +10,8 @@
     "deep-origin-2026",
     "ku-2026",
     "princint-2026",
-    "metr-2026"
+    "metr-2026",
+    "sardine-2026-11-10"
   ],
   "stage_totals": {
     "assessment": {
@@ -40,12 +41,12 @@
     {
       "id": "applied-jobs",
       "label": "Applied jobs",
-      "value": 123,
+      "value": 124,
       "x": 25,
       "y": 70,
       "color": "source",
       "label_position": "above",
-      "ends_here": 89
+      "ends_here": 90
     },
     {
       "id": "applied-phd",
@@ -235,25 +236,20 @@
     }
   ],
   "category_totals": {
-    "jobs": 123,
+    "jobs": 124,
     "phd": 6,
     "other": 6
   },
-  "applied_total": 135,
+  "applied_total": 136,
   "applied_by_category": {
-    "jobs": 123,
+    "jobs": 124,
     "phd": 6,
     "other": 6
   },
-  "percentage_basis": "All 135 included opportunities; eight withdrawn records are excluded from the chart and percentage denominator.",
+  "percentage_basis": "All 136 included opportunities; eight withdrawn records are excluded from the chart and percentage denominator.",
   "historical_applied_total": 132,
   "included_tracker_total": 123,
   "excluded_withdrawn": 8,
   "flow_scale": 2.2,
-  "user_reported_additional_jobs": 5,
-  "pending_overlap_confirmation": {
-    "achievement_id": "sardine-2026-11-10",
-    "provisionally_included_in": "user_reported_additional_jobs",
-    "reason": "User has not yet confirmed whether this application belongs to the five additional jobs."
-  }
+  "user_reported_additional_jobs": 5
 }
