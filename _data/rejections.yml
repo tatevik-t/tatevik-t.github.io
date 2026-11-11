@@ -1,10 +1,18 @@
 # One entry per opportunity. Use the decision date, or a clearly labeled observation date when unavailable.
 # Keep only publication-ready excerpts here; never add inbox links or contact details.
+# Do not add note fields to new entries unless Tatevik explicitly requests them.
 # Omit position titles from notes; treat them as personal information in future entries.
 # Each organization uses its own icon; reuse it for repeat attempts and choose an unused icon for new organizations.
 # stages counts completed selection rounds after application; omit until confirmed.
-reviewed_on: "2026-11-10"
+reviewed_on: "2026-11-11"
 entries:
+  - id: resolution-2026-11-11
+    company: Resolution
+    date: "2026-11-11"
+    category: jobs
+    icon: target
+    quote: "They do need more relevant research experience for this role"
+
   - id: saferai-2026-11-10
     company: SaferAI
     date: "2026-11-10"
