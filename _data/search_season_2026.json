@@ -1,7 +1,7 @@
 {
   "year": 2026,
-  "updated_on": "2026-11-11",
-  "total": 144,
+  "updated_on": "2026-11-17",
+  "total": 145,
   "tracker_total": 131,
   "additional_achievement_ids": [
     "avito-ds-engineer-2026",
@@ -34,14 +34,14 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "total": 38
+      "total": 39
     }
   ],
   "nodes": [
     {
       "id": "applied-jobs",
       "label": "Applied jobs",
-      "value": 132,
+      "value": 133,
       "x": 335,
       "y": 150,
       "color": "source",
@@ -141,7 +141,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "value": 38,
+      "value": 39,
       "x": 1295,
       "y": 335,
       "color": "rejected",
@@ -161,7 +161,7 @@
       "color": "focus-ml",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 132,
+      "percentage_total": 133,
       "percentage_label": "job opportunities",
       "approximate": true
     },
@@ -172,13 +172,13 @@
         "Research Scientist /",
         "Research Engineer"
       ],
-      "value": 34,
+      "value": 35,
       "x": 25,
       "y": 290,
       "color": "focus-research",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 132,
+      "percentage_total": 133,
       "percentage_label": "job opportunities",
       "approximate": true
     },
@@ -195,7 +195,7 @@
       "color": "focus-safety",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 132,
+      "percentage_total": 133,
       "percentage_label": "job opportunities",
       "approximate": true
     },
@@ -212,7 +212,7 @@
       "color": "focus-other",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 132,
+      "percentage_total": 133,
       "percentage_label": "job opportunities",
       "approximate": true
     }
@@ -235,7 +235,7 @@
     {
       "source": 0,
       "target": 10,
-      "value": 33,
+      "value": 34,
       "color": "rejected",
       "label": "Applied jobs → rejected; no recorded interview path"
     },
@@ -308,16 +308,16 @@
       "value": 44,
       "color": "focus-ml",
       "label": "Approximate job focus: ML Engineer / Applied Scientist → Applied jobs",
-      "percentage_total": 132,
+      "percentage_total": 133,
       "percentage_label": "job opportunities"
     },
     {
       "source": 12,
       "target": 0,
-      "value": 34,
+      "value": 35,
       "color": "focus-research",
       "label": "Approximate job focus: Research Scientist / Research Engineer → Applied jobs",
-      "percentage_total": 132,
+      "percentage_total": 133,
       "percentage_label": "job opportunities"
     },
     {
@@ -326,7 +326,7 @@
       "value": 25,
       "color": "focus-safety",
       "label": "Approximate job focus: AI Safety / ML Security / Interpretability → Applied jobs",
-      "percentage_total": 132,
+      "percentage_total": 133,
       "percentage_label": "job opportunities"
     },
     {
@@ -335,30 +335,30 @@
       "value": 29,
       "color": "focus-other",
       "label": "Approximate job focus: Software / Data Science / Other → Applied jobs",
-      "percentage_total": 132,
+      "percentage_total": 133,
       "percentage_label": "job opportunities"
     }
   ],
   "category_totals": {
-    "jobs": 132,
+    "jobs": 133,
     "phd": 6,
     "other": 6
   },
-  "applied_total": 144,
+  "applied_total": 145,
   "applied_by_category": {
-    "jobs": 132,
+    "jobs": 133,
     "phd": 6,
     "other": 6
   },
-  "percentage_basis": "All 144 included identifiable opportunities. Two unidentified user-reported job applications and withdrawn records are excluded from the chart and percentage denominator.",
+  "percentage_basis": "All 145 included identifiable opportunities. Two unidentified user-reported job applications and withdrawn records are excluded from the chart and percentage denominator.",
   "historical_applied_total": 132,
   "included_tracker_total": 129,
   "excluded_withdrawn": 8,
   "flow_scale": 1.7,
   "job_focus": {
-    "total": 132,
+    "total": 133,
     "approximate": true,
-    "percentage_basis": "132 identifiable job opportunities; all other diagram percentages use 144 total opportunities.",
+    "percentage_basis": "133 identifiable job opportunities; all other diagram percentages use 145 total opportunities.",
     "method": "Mutually exclusive manual classification from role titles and recorded context: safety/security/interpretability first, research roles second, ML/applied AI third, software/data science/other/unspecified last. General evaluations alone do not imply AI safety. Three of the five previously reported jobs are matched to tracker roles; their existing Other allocation awaits a separate focus review. The two unidentified reports are excluded from the chart at the user’s request. Resolution Research Scientist is classified as safety using its recorded theoretical AI alignment focus.",
     "groups": [
       {
@@ -369,7 +369,7 @@
       {
         "id": "research",
         "label": "Research Scientist / Research Engineer",
-        "total": 34
+        "total": 35
       },
       {
         "id": "safety",
@@ -436,6 +436,19 @@
         "ml": 1,
         "research": 2
       }
+    },
+    {
+      "application_date": "2026-11-16",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        163
+      ],
+      "added_jobs": 1,
+      "focus_counts": {
+        "research": 1
+      },
+      "status_as_of": "2026-11-17",
+      "status": "rejected"
     }
   ],
   "reconciliation": {
