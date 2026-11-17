@@ -1,7 +1,7 @@
 {
   "year": 2026,
   "updated_on": "2026-11-17",
-  "total": 150,
+  "total": 151,
   "tracker_total": 131,
   "additional_achievement_ids": [
     "avito-ds-engineer-2026",
@@ -20,7 +20,7 @@
       "other": 2
     },
     "interview": {
-      "jobs": 5,
+      "jobs": 6,
       "phd": 2,
       "other": 1
     }
@@ -41,7 +41,7 @@
     {
       "id": "applied-jobs",
       "label": "Applied jobs",
-      "value": 138,
+      "value": 139,
       "x": 335,
       "y": 150,
       "color": "source",
@@ -101,12 +101,12 @@
     {
       "id": "interview-jobs",
       "label": "Interview · jobs",
-      "value": 5,
+      "value": 6,
       "x": 935,
       "y": 190,
       "color": "interview",
       "label_position": "above",
-      "ends_here": 3
+      "ends_here": 4
     },
     {
       "id": "interview-phd",
@@ -161,7 +161,7 @@
       "color": "focus-ml",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 138,
+      "percentage_total": 139,
       "percentage_label": "job opportunities",
       "approximate": true
     },
@@ -178,7 +178,7 @@
       "color": "focus-research",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 138,
+      "percentage_total": 139,
       "percentage_label": "job opportunities",
       "approximate": true
     },
@@ -189,13 +189,13 @@
         "AI Safety / ML Security /",
         "Interpretability"
       ],
-      "value": 26,
+      "value": 27,
       "x": 25,
       "y": 440,
       "color": "focus-safety",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 138,
+      "percentage_total": 139,
       "percentage_label": "job opportunities",
       "approximate": true
     },
@@ -212,7 +212,7 @@
       "color": "focus-other",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 138,
+      "percentage_total": 139,
       "percentage_label": "job opportunities",
       "approximate": true
     }
@@ -228,7 +228,7 @@
     {
       "source": 0,
       "target": 6,
-      "value": 4,
+      "value": 5,
       "color": "interview",
       "label": "Applied jobs → job interview"
     },
@@ -308,7 +308,7 @@
       "value": 46,
       "color": "focus-ml",
       "label": "Approximate job focus: ML Engineer / Applied Scientist → Applied jobs",
-      "percentage_total": 138,
+      "percentage_total": 139,
       "percentage_label": "job opportunities"
     },
     {
@@ -317,16 +317,16 @@
       "value": 37,
       "color": "focus-research",
       "label": "Approximate job focus: Research Scientist / Research Engineer → Applied jobs",
-      "percentage_total": 138,
+      "percentage_total": 139,
       "percentage_label": "job opportunities"
     },
     {
       "source": 13,
       "target": 0,
-      "value": 26,
+      "value": 27,
       "color": "focus-safety",
       "label": "Approximate job focus: AI Safety / ML Security / Interpretability → Applied jobs",
-      "percentage_total": 138,
+      "percentage_total": 139,
       "percentage_label": "job opportunities"
     },
     {
@@ -335,30 +335,30 @@
       "value": 29,
       "color": "focus-other",
       "label": "Approximate job focus: Software / Data Science / Other → Applied jobs",
-      "percentage_total": 138,
+      "percentage_total": 139,
       "percentage_label": "job opportunities"
     }
   ],
   "category_totals": {
-    "jobs": 138,
+    "jobs": 139,
     "phd": 6,
     "other": 6
   },
-  "applied_total": 150,
+  "applied_total": 151,
   "applied_by_category": {
-    "jobs": 138,
+    "jobs": 139,
     "phd": 6,
     "other": 6
   },
-  "percentage_basis": "All 150 included identifiable opportunities. Two unidentified user-reported job applications and withdrawn records are excluded from the chart and percentage denominator.",
+  "percentage_basis": "All 151 included identifiable opportunities. Two unidentified user-reported job applications and withdrawn records are excluded from the chart and percentage denominator.",
   "historical_applied_total": 132,
   "included_tracker_total": 129,
   "excluded_withdrawn": 8,
   "flow_scale": 1.7,
   "job_focus": {
-    "total": 138,
+    "total": 139,
     "approximate": true,
-    "percentage_basis": "138 identifiable job opportunities; all other diagram percentages use 150 total opportunities.",
+    "percentage_basis": "139 identifiable job opportunities; all other diagram percentages use 151 total opportunities.",
     "method": "Mutually exclusive manual classification from role titles and recorded context: safety/security/interpretability first, research roles second, ML/applied AI third, software/data science/other/unspecified last. General evaluations alone do not imply AI safety. Three of the five previously reported jobs are matched to tracker roles; their existing Other allocation awaits a separate focus review. The two unidentified reports are excluded from the chart at the user’s request. Resolution Research Scientist is classified as safety using its recorded theoretical AI alignment focus.",
     "groups": [
       {
@@ -374,7 +374,7 @@
       {
         "id": "safety",
         "label": "AI Safety / ML Security / Interpretability",
-        "total": 26
+        "total": 27
       },
       {
         "id": "other",
@@ -513,6 +513,19 @@
       "status_as_of": "2026-11-17",
       "status": "rejected",
       "count_note": "Previously included once via its rejection decision; archive and receipt now verify the submission date. No count change."
+    },
+    {
+      "application_date": "2026-11-11",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        318
+      ],
+      "added_jobs": 1,
+      "focus_counts": {
+        "safety": 1
+      },
+      "status_as_of": "2026-11-17",
+      "status": "interview"
     }
   ],
   "reconciliation": {
@@ -531,5 +544,15 @@
     "included_unidentified_jobs": 0,
     "excluded_unidentified_jobs": 2,
     "user_reported_jobs_note": "Keep the three identified reports as matches to existing tracker submissions, not additional counts. Exclude the remaining two reports until identified, per user instruction."
-  }
+  },
+  "tracker_stage_updates": [
+    {
+      "source_sheet": "Sheet1",
+      "source_row": 318,
+      "date": "2026-11-17",
+      "stage": "interview",
+      "state": "invited",
+      "completed": false
+    }
+  ]
 }
