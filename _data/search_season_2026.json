@@ -11,8 +11,7 @@
     "ku-2026",
     "princint-2026",
     "metr-2026",
-    "sardine-2026-11-10",
-    "huawei-italia-edge-models-2026-11-12"
+    "sardine-2026-11-10"
   ],
   "stage_totals": {
     "assessment": {
@@ -502,6 +501,18 @@
       },
       "status_as_of": "2026-11-17",
       "status": "applied"
+    },
+    {
+      "application_date": "2026-10-23",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        348
+      ],
+      "added_jobs": 0,
+      "reclassified_from_supplementary": "huawei-italia-edge-models-2026-11-12",
+      "status_as_of": "2026-11-17",
+      "status": "rejected",
+      "count_note": "Previously included once via its rejection decision; archive and receipt now verify the submission date. No count change."
     }
   ],
   "reconciliation": {
