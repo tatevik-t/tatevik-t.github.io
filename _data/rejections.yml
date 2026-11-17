@@ -6,6 +6,27 @@
 # stages counts completed selection rounds after application; omit until confirmed.
 reviewed_on: "2026-11-17"
 entries:
+  - id: abundant-research-eu-2026-11-13
+    company: Abundant AI
+    date: "2026-11-13"
+    category: jobs
+    icon: crown
+    quote: "After reviewing your application we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
+
+  - id: gray-swan-2026-11-12
+    company: Gray Swan AI
+    date: "2026-11-12"
+    category: jobs
+    icon: wings
+    quote: "After reviewing your application we've determined that there isn't an ideal fit at this time, and we will not be moving forward with your candidacy."
+
+  - id: huawei-italia-edge-models-2026-11-12
+    company: Huawei Technologies Italia
+    date: "2026-11-12"
+    category: jobs
+    icon: lotus
+    quote: "We have reviewed your application, and unfortunately we are not able to offer you a position at this time."
+
   - id: recraft-2026-11-17
     company: Recraft
     date: "2026-11-17"
