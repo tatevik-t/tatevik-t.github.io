@@ -6,6 +6,13 @@
 # stages counts completed selection rounds after application; omit until confirmed.
 reviewed_on: "2026-11-17"
 entries:
+  - id: recraft-2026-11-17
+    company: Recraft
+    date: "2026-11-17"
+    category: jobs
+    icon: diamond
+    quote: "After careful consideration, we’ve decided to move forward with other candidates whose experience and qualifications more closely match our current needs."
+
   - id: yandex-research-ml-residency-2026-11-17
     company: Yandex
     date: "2026-11-17"
