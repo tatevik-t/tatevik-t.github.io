@@ -20,7 +20,7 @@
       "other": 2
     },
     "interview": {
-      "jobs": 4,
+      "jobs": 5,
       "phd": 2,
       "other": 1
     }
@@ -46,7 +46,7 @@
       "y": 150,
       "color": "source",
       "label_position": "above",
-      "ends_here": 94
+      "ends_here": 93
     },
     {
       "id": "applied-phd",
@@ -101,12 +101,12 @@
     {
       "id": "interview-jobs",
       "label": "Interview · jobs",
-      "value": 4,
+      "value": 5,
       "x": 935,
       "y": 190,
       "color": "interview",
       "label_position": "above",
-      "ends_here": 2
+      "ends_here": 3
     },
     {
       "id": "interview-phd",
@@ -228,7 +228,7 @@
     {
       "source": 0,
       "target": 6,
-      "value": 3,
+      "value": 4,
       "color": "interview",
       "label": "Applied jobs → job interview"
     },
