@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_on": "2026-11-17",
+  "updated_on": "2026-11-18",
   "total": 151,
   "tracker_total": 131,
   "additional_achievement_ids": [
@@ -34,7 +34,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "total": 43
+      "total": 44
     }
   ],
   "nodes": [
@@ -46,7 +46,7 @@
       "y": 150,
       "color": "source",
       "label_position": "above",
-      "ends_here": 94
+      "ends_here": 93
     },
     {
       "id": "applied-phd",
@@ -141,7 +141,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "value": 43,
+      "value": 44,
       "x": 1295,
       "y": 335,
       "color": "rejected",
@@ -235,7 +235,7 @@
     {
       "source": 0,
       "target": 10,
-      "value": 38,
+      "value": 39,
       "color": "rejected",
       "label": "Applied jobs → rejected; no recorded interview path"
     },
