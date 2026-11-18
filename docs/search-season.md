@@ -1,6 +1,6 @@
 # 2026 multilevel search-season snapshot
 
-The rejection page renders `_includes/search-season.html` from `_data/search_season_2026.json`. The static SVG uses that aggregate source. Its accessible description and ribbon titles expose the counts; explanatory captions and the expandable details/table are omitted from the public page at the user’s request. No private tracker rows, archive links, contact details, or position titles are published.
+The homepage and rejection page render `_includes/search-season.html` from `_data/search_season_2026.json`. Both pages share the same include and `assets/css/search-season.css`, so the static SVG always uses that aggregate source. The homepage enables it with `search_season: true` and displays it at the full content width below the profile and updates. Its accessible description and ribbon titles expose the counts; explanatory captions and the expandable details/table are omitted from the public page at the user’s request. No private tracker rows, archive links, contact details, or position titles are published.
 
 ## Sources and scope
 

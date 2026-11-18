@@ -114,4 +114,9 @@ layout: default
       </div>
     </div>
   {% endif %}
+  {% if page.search_season %}
+    <div class="home-search-season">
+      {% include search-season.html %}
+    </div>
+  {% endif %}
 </div>
