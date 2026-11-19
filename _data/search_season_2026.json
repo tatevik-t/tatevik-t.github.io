@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "updated_on": "2026-11-18",
+  "updated_on": "2026-11-19",
   "total": 167,
   "tracker_total": 160,
   "additional_achievement_ids": [
@@ -33,7 +33,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "total": 44
+      "total": 45
     }
   ],
   "nodes": [
@@ -45,7 +45,7 @@
       "y": 150,
       "color": "source",
       "label_position": "above",
-      "ends_here": 109
+      "ends_here": 108
     },
     {
       "id": "applied-phd",
@@ -140,7 +140,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "value": 44,
+      "value": 45,
       "x": 1295,
       "y": 335,
       "color": "rejected",
@@ -234,7 +234,7 @@
     {
       "source": 0,
       "target": 10,
-      "value": 39,
+      "value": 40,
       "color": "rejected",
       "label": "Applied jobs → rejected; no recorded interview path"
     },
@@ -743,6 +743,17 @@
       "stage": "interview",
       "state": "invited",
       "completed": false
+    }
+  ],
+  "tracker_outcome_updates": [
+    {
+      "source_sheet": "Sheet1",
+      "source_row": 303,
+      "date": "2026-11-19",
+      "previous_status": "applied",
+      "status": "rejected",
+      "added_applications": 0,
+      "rejection_id": "google-deepmind-gemini-2026-11-19"
     }
   ]
 }
