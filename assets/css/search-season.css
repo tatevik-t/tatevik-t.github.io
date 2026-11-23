@@ -23,6 +23,7 @@ html[data-theme="dark"] .rw-season {
 .rw-season .rw-eyebrow { font: 10px/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: 1.6px; color: var(--rw-muted); }
 .rw-sankey-scroll:focus-visible { outline: 3px solid var(--rw-green); outline-offset: 5px; }
 .home-search-season { clear: both; padding-top: 1px; }
+#main.has-search-season > .sidebar { position: static; height: auto; overflow: visible; padding-top: 0; }
 .rw-season { margin-top: 36px; padding: 28px 30px 23px; border: 1px solid var(--rw-line); border-radius: 10px; background: var(--rw-surface); scroll-margin-top: 90px; }
 .rw-season .rw-section-heading { margin-bottom: 22px; }
 .rw-season-intro { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
