@@ -1,8 +1,8 @@
 {
   "year": 2026,
-  "updated_on": "2026-11-19",
-  "total": 167,
-  "tracker_total": 160,
+  "updated_on": "2026-11-23",
+  "total": 179,
+  "tracker_total": 172,
   "additional_achievement_ids": [
     "bostongene-2026",
     "deep-origin-2026",
@@ -33,19 +33,19 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "total": 45
+      "total": 47
     }
   ],
   "nodes": [
     {
       "id": "applied-jobs",
       "label": "Applied jobs",
-      "value": 155,
+      "value": 167,
       "x": 335,
       "y": 150,
       "color": "source",
       "label_position": "above",
-      "ends_here": 108
+      "ends_here": 119
     },
     {
       "id": "applied-phd",
@@ -105,7 +105,7 @@
       "y": 190,
       "color": "interview",
       "label_position": "above",
-      "ends_here": 4
+      "ends_here": 3
     },
     {
       "id": "interview-phd",
@@ -140,7 +140,7 @@
     {
       "id": "rejected",
       "label": "Rejected",
-      "value": 45,
+      "value": 47,
       "x": 1295,
       "y": 335,
       "color": "rejected",
@@ -154,13 +154,13 @@
         "ML Engineer /",
         "Applied Scientist"
       ],
-      "value": 47,
+      "value": 49,
       "x": 25,
       "y": 120,
       "color": "focus-ml",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 155,
+      "percentage_total": 167,
       "percentage_label": "job opportunities",
       "approximate": true
     },
@@ -171,13 +171,13 @@
         "Research Scientist /",
         "Research Engineer"
       ],
-      "value": 50,
+      "value": 57,
       "x": 25,
       "y": 310,
       "color": "focus-research",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 155,
+      "percentage_total": 167,
       "percentage_label": "job opportunities",
       "approximate": true
     },
@@ -188,13 +188,13 @@
         "AI Safety / ML Security /",
         "Interpretability"
       ],
-      "value": 31,
+      "value": 34,
       "x": 25,
       "y": 500,
       "color": "focus-safety",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 155,
+      "percentage_total": 167,
       "percentage_label": "job opportunities",
       "approximate": true
     },
@@ -211,7 +211,7 @@
       "color": "focus-other",
       "label_position": "above",
       "ends_here": 0,
-      "percentage_total": 155,
+      "percentage_total": 167,
       "percentage_label": "job opportunities",
       "approximate": true
     }
@@ -234,7 +234,7 @@
     {
       "source": 0,
       "target": 10,
-      "value": 40,
+      "value": 41,
       "color": "rejected",
       "label": "Applied jobs → rejected; no recorded interview path"
     },
@@ -269,7 +269,7 @@
     {
       "source": 6,
       "target": 10,
-      "value": 2,
+      "value": 3,
       "color": "rejected",
       "label": "Job interview → rejected"
     },
@@ -304,28 +304,28 @@
     {
       "source": 11,
       "target": 0,
-      "value": 47,
+      "value": 49,
       "color": "focus-ml",
       "label": "Approximate job focus: ML Engineer / Applied Scientist → Applied jobs",
-      "percentage_total": 155,
+      "percentage_total": 167,
       "percentage_label": "job opportunities"
     },
     {
       "source": 12,
       "target": 0,
-      "value": 50,
+      "value": 57,
       "color": "focus-research",
       "label": "Approximate job focus: Research Scientist / Research Engineer → Applied jobs",
-      "percentage_total": 155,
+      "percentage_total": 167,
       "percentage_label": "job opportunities"
     },
     {
       "source": 13,
       "target": 0,
-      "value": 31,
+      "value": 34,
       "color": "focus-safety",
       "label": "Approximate job focus: AI Safety / ML Security / Interpretability → Applied jobs",
-      "percentage_total": 155,
+      "percentage_total": 167,
       "percentage_label": "job opportunities"
     },
     {
@@ -334,45 +334,45 @@
       "value": 27,
       "color": "focus-other",
       "label": "Approximate job focus: Software / Data Science / Other → Applied jobs",
-      "percentage_total": 155,
+      "percentage_total": 167,
       "percentage_label": "job opportunities"
     }
   ],
   "category_totals": {
-    "jobs": 155,
+    "jobs": 167,
     "phd": 6,
     "other": 6
   },
-  "applied_total": 167,
+  "applied_total": 179,
   "applied_by_category": {
-    "jobs": 155,
+    "jobs": 167,
     "phd": 6,
     "other": 6
   },
-  "percentage_basis": "All 167 included identifiable opportunities. Withdrawn records and two unidentified user-reported applications are excluded.",
-  "included_tracker_total": 160,
+  "percentage_basis": "All 179 included identifiable opportunities. Withdrawn records and two unidentified user-reported applications are excluded.",
+  "included_tracker_total": 172,
   "excluded_withdrawn": 40,
   "flow_scale": 1.7,
   "job_focus": {
-    "total": 155,
+    "total": 167,
     "approximate": true,
-    "percentage_basis": "155 job opportunities; all other diagram percentages use 167 total opportunities.",
+    "percentage_basis": "167 job opportunities; all other diagram percentages use 179 total opportunities.",
     "method": "Approximate mutually exclusive role-focus classification using current tracker labels, established role-level audit, and the recorded duties of newly submitted roles. Explicit safety/security/interpretability context first, research roles next, ML/applied AI next, then software/data science/operations/other. General evaluation work alone does not establish AI safety.",
     "groups": [
       {
         "id": "ml",
         "label": "ML Engineer / Applied Scientist",
-        "total": 47
+        "total": 49
       },
       {
         "id": "research",
         "label": "Research Scientist / Research Engineer",
-        "total": 50
+        "total": 57
       },
       {
         "id": "safety",
         "label": "AI Safety / ML Security / Interpretability",
-        "total": 31
+        "total": 34
       },
       {
         "id": "other",
@@ -536,27 +536,81 @@
       "focus_counts": {
         "research": 5
       }
+    },
+    {
+      "application_date": "2026-11-19",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        354,
+        355,
+        356,
+        357,
+        358
+      ],
+      "added_jobs": 5,
+      "focus_counts": {
+        "research": 5
+      }
+    },
+    {
+      "application_date": "2026-11-20",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        359,
+        360,
+        361,
+        362,
+        363
+      ],
+      "added_jobs": 5,
+      "focus_counts": {
+        "safety": 1,
+        "research": 2,
+        "ml": 2
+      }
+    },
+    {
+      "application_date": "2026-11-21",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        313
+      ],
+      "added_jobs": 1,
+      "focus_counts": {
+        "safety": 1
+      }
+    },
+    {
+      "application_date": "2026-11-23",
+      "source_sheet": "Sheet1",
+      "source_rows": [
+        365
+      ],
+      "added_jobs": 1,
+      "focus_counts": {
+        "safety": 1
+      }
     }
   ],
   "reconciliation": {
-    "as_of": "2026-11-18",
+    "as_of": "2026-11-23",
     "source_sheet": "Sheet1",
-    "source_range": "A1:R400",
-    "included_tracker_records": 160,
-    "dated_tracker_records": 159,
+    "source_range": "A1:R450",
+    "included_tracker_records": 172,
+    "dated_tracker_records": 171,
     "undated_tracker_records": 1,
-    "dated_tracker_jobs": 149,
+    "dated_tracker_jobs": 161,
     "undated_tracker_jobs": 1,
     "supplementary_job_decisions_without_current_matching_submission": 5,
     "supplementary_phd_decisions": 2,
-    "identified_jobs": 155,
-    "included_job_total": 155,
-    "included_overall_total": 167,
+    "identified_jobs": 167,
+    "included_job_total": 167,
+    "included_overall_total": 179,
     "tracker_status_counts": {
       "no response": 12,
-      "rejected": 37,
-      "applied": 103,
-      "interview": 5,
+      "rejected": 40,
+      "applied": 113,
+      "interview": 4,
       "offer": 2,
       "OA": 1
     },
@@ -564,7 +618,7 @@
     "user_reported_jobs_still_unidentified": 2,
     "included_unidentified_jobs": 0,
     "excluded_unidentified_jobs": 2,
-    "today_dated_jobs": 5,
+    "today_dated_jobs": 1,
     "join_rule": "Count each distinct role/application attempt once across tracker, decision evidence and prior user reports. Shared generic career URLs alone do not establish a duplicate. Unknown application dates are not submissions on the decision date.",
     "included_tracker_rows": {
       "jobs": [
@@ -695,6 +749,7 @@
         303,
         311,
         312,
+        313,
         314,
         315,
         316,
@@ -717,7 +772,18 @@
         350,
         351,
         352,
-        353
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        365
       ],
       "phd": [
         12,
@@ -754,6 +820,24 @@
       "status": "rejected",
       "added_applications": 0,
       "rejection_id": "google-deepmind-gemini-2026-11-19"
+    },
+    {
+      "source_sheet": "Sheet1",
+      "source_row": 239,
+      "date": "2026-11-22",
+      "previous_status": "applied",
+      "status": "rejected",
+      "added_applications": 0,
+      "rejection_id": "cloudlinux-email-security-2026-11-22"
+    },
+    {
+      "source_sheet": "Sheet1",
+      "source_row": 101,
+      "date": "2026-11-23",
+      "previous_status": "interview",
+      "status": "rejected",
+      "added_applications": 0,
+      "rejection_id": "foxelli-2026-11-23"
     }
   ]
 }

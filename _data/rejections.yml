@@ -4,8 +4,23 @@
 # Omit position titles from notes; treat them as personal information in future entries.
 # Each organization uses its own icon; reuse it for repeat attempts and choose an unused icon for new organizations.
 # stages counts completed selection rounds after application; omit until confirmed.
-reviewed_on: "2026-11-19"
+reviewed_on: "2026-11-23"
 entries:
+  - id: foxelli-2026-11-23
+    company: Foxelli Group
+    date: "2026-11-23"
+    category: jobs
+    stages: 1
+    icon: star
+    quote: "After a thorough review, we will not be moving forward with your application at this stage."
+
+  - id: cloudlinux-email-security-2026-11-22
+    company: CloudLinux
+    date: "2026-11-22"
+    category: jobs
+    icon: lock
+    quote: "We have received a high volume of applications, and after careful consideration, we regret to inform you that we will not be moving forward with your application at this time."
+
   - id: google-deepmind-gemini-2026-11-19
     company: Google DeepMind
     date: "2026-11-19"
