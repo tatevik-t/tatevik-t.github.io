@@ -2,7 +2,6 @@
 permalink: /
 title: "Tatevik Ter-Hovhannisyan"
 author_profile: true
-search_season: true
 redirect_from:
   - /about/
   - /about.html
